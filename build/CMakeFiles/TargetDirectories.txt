@@ -1,0 +1,3 @@
+/home/xiaohou/Desktop/mykuiper/build/CMakeFiles/kuiper.dir
+/home/xiaohou/Desktop/mykuiper/build/CMakeFiles/edit_cache.dir
+/home/xiaohou/Desktop/mykuiper/build/CMakeFiles/rebuild_cache.dir

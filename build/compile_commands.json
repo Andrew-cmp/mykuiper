@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/xiaohou/Desktop/mykuiper/build",
+  "command": "/usr/bin/c++ -DGFLAGS_IS_A_DLL=0 -DGLOG_USE_GFLAGS -DGLOG_USE_GLOG_EXPORT -Dkuiper_EXPORTS -I/home/xiaohou/Desktop/mykuiper/./include  -march=native -fPIC -fopenmp -std=gnu++17 -o CMakeFiles/kuiper.dir/source/data/load_data.cpp.o -c /home/xiaohou/Desktop/mykuiper/source/data/load_data.cpp",
+  "file": "/home/xiaohou/Desktop/mykuiper/source/data/load_data.cpp"
+}
+]
