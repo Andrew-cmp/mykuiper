@@ -40,4 +40,27 @@ target_include_directories(kuiper PUBLIC ${glog_INCLUDE_DIR})
 target_include_directories(kuiper PUBLIC ${GTest_INCLUDE_DIR})
 target_include_directories(kuiper PUBLIC ${Armadillo_INCLUDE_DIR})
 
+# # mathfun library defines，这是干嘛的
+# add_compile_definitions(SSE_MATHFUN_WITH_CODE USE_SSE_AUTO)
 
+
+# # 本项目的开发者请使用set(DEVELOPMENT ON)或者在cmake中添加-DDEVELOPMENT=ON将选项打开
+# # 如果是，打开了test和bench功能，增加了bench和test的directory。
+# option(DEVELOPMENT ON)
+# if (${DEVELOPMENT})
+#     message(STATUS "DEVELOPMENT MODE ON")
+#     enable_testing()
+#     add_subdirectory(bench)
+#     add_subdirectory(test)
+# endif ()
+
+# 本项目的开发者请使用set(DEVELOPMENT ON)或者在cmake中添加-DDEVELOPMENT=ON将选项打开
+# 如果是，打开了test和bench功能，增加了bench和test的directory。
+#option(DEVELOPMENT ON)
+#if (${DEVELOPMENT}) 我们这里直接打开
+message(STATUS "DEVELOPMENT MODE ON")
+enable_testing()
+# 这里add_subdirectory之后的子文件夹，就需要在里面包含CMakeLists文件。 相对于上面的aux_source_directory是不一样的。
+add_subdirectory(bench)
+add_subdirectory(test)
+#endif ()

@@ -15,6 +15,7 @@
 #include <glog/logging.h>
 #include <armadillo>
 #include <string>
+#include <filesystem>
 namespace mykuiper{
 class CSVDataLoader {
  public:
@@ -27,6 +28,7 @@ class CSVDataLoader {
 template <typename T>
 arma::Mat<T> CSVDataLoader::LoadData(const std::string& file_path, const char split_char) {
   arma::Mat<T> data;
+  LOG(INFO)<<"current path "<< std::filesystem::current_path() <<'\n';
   if (file_path.empty()) {
     LOG(ERROR) << "CSV file path is empty: " << file_path;
     return data;
@@ -37,6 +39,7 @@ arma::Mat<T> CSVDataLoader::LoadData(const std::string& file_path, const char sp
     LOG(ERROR) << "File open failed: " << file_path;
     return data;
   }
+  std::string line_str;
   std::stringstream line_stream;
 
   const auto& [rows, cols] = CSVDataLoader::GetMatrixSize(in, split_char);
