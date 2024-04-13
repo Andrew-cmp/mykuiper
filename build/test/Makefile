@@ -164,6 +164,30 @@ test_data/test_load_data.cpp.s:
 	cd /home/xiaohou/Desktop/mykuiper/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_kuiper.dir/build.make test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.s
 .PHONY : test_data/test_load_data.cpp.s
 
+test_data/test_tensor.o: test_data/test_tensor.cpp.o
+.PHONY : test_data/test_tensor.o
+
+# target to build an object file
+test_data/test_tensor.cpp.o:
+	cd /home/xiaohou/Desktop/mykuiper/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_kuiper.dir/build.make test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o
+.PHONY : test_data/test_tensor.cpp.o
+
+test_data/test_tensor.i: test_data/test_tensor.cpp.i
+.PHONY : test_data/test_tensor.i
+
+# target to preprocess a source file
+test_data/test_tensor.cpp.i:
+	cd /home/xiaohou/Desktop/mykuiper/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_kuiper.dir/build.make test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.i
+.PHONY : test_data/test_tensor.cpp.i
+
+test_data/test_tensor.s: test_data/test_tensor.cpp.s
+.PHONY : test_data/test_tensor.s
+
+# target to generate assembly for a file
+test_data/test_tensor.cpp.s:
+	cd /home/xiaohou/Desktop/mykuiper/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_kuiper.dir/build.make test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.s
+.PHONY : test_data/test_tensor.cpp.s
+
 test_main.o: test_main.cpp.o
 .PHONY : test_main.o
 
@@ -201,6 +225,9 @@ help:
 	@echo "... test_data/test_load_data.o"
 	@echo "... test_data/test_load_data.i"
 	@echo "... test_data/test_load_data.s"
+	@echo "... test_data/test_tensor.o"
+	@echo "... test_data/test_tensor.i"
+	@echo "... test_data/test_tensor.s"
 	@echo "... test_main.o"
 	@echo "... test_main.i"
 	@echo "... test_main.s"

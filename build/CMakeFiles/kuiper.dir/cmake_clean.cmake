@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../lib/libkuiper.so"
   "CMakeFiles/kuiper.dir/source/data/load_data.cpp.o"
   "CMakeFiles/kuiper.dir/source/data/load_data.cpp.o.d"
+  "CMakeFiles/kuiper.dir/source/data/tensor.cpp.o"
+  "CMakeFiles/kuiper.dir/source/data/tensor.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

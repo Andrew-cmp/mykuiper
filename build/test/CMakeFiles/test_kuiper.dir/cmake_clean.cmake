@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o"
   "CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o.d"
+  "CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o"
+  "CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o.d"
   "CMakeFiles/test_kuiper.dir/test_main.cpp.o"
   "CMakeFiles/test_kuiper.dir/test_main.cpp.o.d"
   "test_kuiper"

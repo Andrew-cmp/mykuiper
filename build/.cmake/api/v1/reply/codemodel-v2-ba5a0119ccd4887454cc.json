@@ -73,14 +73,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "kuiper::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-kuiper-613c540a5263601a619a.json",
+					"jsonFile" : "target-kuiper-3e08b3b9253b148c2eeb.json",
 					"name" : "kuiper",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_kuiper::@36f028580bb02cc8272a",
-					"jsonFile" : "target-test_kuiper-270ae7e59c42bbaa6e1d.json",
+					"jsonFile" : "target-test_kuiper-5739fed91d3b9bb6f8c2.json",
 					"name" : "test_kuiper",
 					"projectIndex" : 0
 				}

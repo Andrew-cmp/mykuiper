@@ -176,6 +176,30 @@ source/data/load_data.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/data/load_data.cpp.s
 .PHONY : source/data/load_data.cpp.s
 
+source/data/tensor.o: source/data/tensor.cpp.o
+.PHONY : source/data/tensor.o
+
+# target to build an object file
+source/data/tensor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/data/tensor.cpp.o
+.PHONY : source/data/tensor.cpp.o
+
+source/data/tensor.i: source/data/tensor.cpp.i
+.PHONY : source/data/tensor.i
+
+# target to preprocess a source file
+source/data/tensor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/data/tensor.cpp.i
+.PHONY : source/data/tensor.cpp.i
+
+source/data/tensor.s: source/data/tensor.cpp.s
+.PHONY : source/data/tensor.s
+
+# target to generate assembly for a file
+source/data/tensor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/data/tensor.cpp.s
+.PHONY : source/data/tensor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -190,6 +214,9 @@ help:
 	@echo "... source/data/load_data.o"
 	@echo "... source/data/load_data.i"
 	@echo "... source/data/load_data.s"
+	@echo "... source/data/tensor.o"
+	@echo "... source/data/tensor.i"
+	@echo "... source/data/tensor.s"
 .PHONY : help
 
 
