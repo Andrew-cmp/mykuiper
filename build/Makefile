@@ -200,6 +200,30 @@ source/data/tensor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/data/tensor.cpp.s
 .PHONY : source/data/tensor.cpp.s
 
+source/data/tensor_utils.o: source/data/tensor_utils.cpp.o
+.PHONY : source/data/tensor_utils.o
+
+# target to build an object file
+source/data/tensor_utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o
+.PHONY : source/data/tensor_utils.cpp.o
+
+source/data/tensor_utils.i: source/data/tensor_utils.cpp.i
+.PHONY : source/data/tensor_utils.i
+
+# target to preprocess a source file
+source/data/tensor_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.i
+.PHONY : source/data/tensor_utils.cpp.i
+
+source/data/tensor_utils.s: source/data/tensor_utils.cpp.s
+.PHONY : source/data/tensor_utils.s
+
+# target to generate assembly for a file
+source/data/tensor_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.s
+.PHONY : source/data/tensor_utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -217,6 +241,9 @@ help:
 	@echo "... source/data/tensor.o"
 	@echo "... source/data/tensor.i"
 	@echo "... source/data/tensor.s"
+	@echo "... source/data/tensor_utils.o"
+	@echo "... source/data/tensor_utils.i"
+	@echo "... source/data/tensor_utils.s"
 .PHONY : help
 
 

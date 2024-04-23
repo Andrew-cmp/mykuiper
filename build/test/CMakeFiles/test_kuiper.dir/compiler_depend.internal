@@ -2077,6 +2077,7 @@ test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o
  /usr/include/armadillo_bits/newarp_UpperHessenbergEigen_meat.hpp
  /usr/include/armadillo_bits/newarp_UpperHessenbergQR_meat.hpp
  /usr/include/armadillo_bits/compiler_setup_post.hpp
+ /home/xiaohou/Desktop/mykuiper/include/data/tensor_util.hpp
 
 test/CMakeFiles/test_kuiper.dir/test_main.cpp.o
  /home/xiaohou/Desktop/mykuiper/test/test_main.cpp

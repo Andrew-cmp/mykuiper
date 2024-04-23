@@ -2074,7 +2074,8 @@ test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o: ../test/test_data/t
   /usr/include/armadillo_bits/newarp_TridiagEigen_meat.hpp \
   /usr/include/armadillo_bits/newarp_UpperHessenbergEigen_meat.hpp \
   /usr/include/armadillo_bits/newarp_UpperHessenbergQR_meat.hpp \
-  /usr/include/armadillo_bits/compiler_setup_post.hpp
+  /usr/include/armadillo_bits/compiler_setup_post.hpp \
+  ../include/data/tensor_util.hpp
 
 test/CMakeFiles/test_kuiper.dir/test_main.cpp.o: ../test/test_main.cpp \
   /usr/include/stdc-predef.h \
@@ -2831,6 +2832,8 @@ test/CMakeFiles/test_kuiper.dir/test_main.cpp.o: ../test/test_main.cpp \
 /usr/include/armadillo_bits/strip.hpp:
 
 /usr/include/armadillo_bits/SpProxy.hpp:
+
+../include/data/tensor_util.hpp:
 
 /usr/include/armadillo_bits/Proxy.hpp:
 

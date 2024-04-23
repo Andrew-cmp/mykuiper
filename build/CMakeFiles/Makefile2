@@ -116,12 +116,12 @@ test/clean: test/CMakeFiles/test_kuiper.dir/clean
 CMakeFiles/kuiper.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xiaohou/Desktop/mykuiper/build/CMakeFiles --progress-num=1,2,3 "Built target kuiper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xiaohou/Desktop/mykuiper/build/CMakeFiles --progress-num=1,2,3,4 "Built target kuiper"
 .PHONY : CMakeFiles/kuiper.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/kuiper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaohou/Desktop/mykuiper/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaohou/Desktop/mykuiper/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/kuiper.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaohou/Desktop/mykuiper/build/CMakeFiles 0
 .PHONY : CMakeFiles/kuiper.dir/rule
@@ -142,12 +142,12 @@ CMakeFiles/kuiper.dir/clean:
 test/CMakeFiles/test_kuiper.dir/all: CMakeFiles/kuiper.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_kuiper.dir/build.make test/CMakeFiles/test_kuiper.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_kuiper.dir/build.make test/CMakeFiles/test_kuiper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xiaohou/Desktop/mykuiper/build/CMakeFiles --progress-num=4,5,6,7 "Built target test_kuiper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xiaohou/Desktop/mykuiper/build/CMakeFiles --progress-num=5,6,7,8 "Built target test_kuiper"
 .PHONY : test/CMakeFiles/test_kuiper.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_kuiper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaohou/Desktop/mykuiper/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaohou/Desktop/mykuiper/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_kuiper.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaohou/Desktop/mykuiper/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_kuiper.dir/rule

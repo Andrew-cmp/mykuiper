@@ -1,5 +1,5 @@
-test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o: \
- /home/xiaohou/Desktop/mykuiper/test/test_data/test_tensor.cpp \
+CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o: \
+ /home/xiaohou/Desktop/mykuiper/source/data/tensor_utils.cpp \
  /usr/include/stdc-predef.h /usr/local/include/glog/logging.h \
  /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -182,104 +182,7 @@ test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o: \
  /usr/local/include/gflags/gflags_gflags.h \
  /usr/local/include/glog/platform.h /usr/local/include/glog/types.h \
  /usr/local/include/glog/log_severity.h \
- /usr/local/include/glog/vlog_is_on.h /usr/local/include/gtest/gtest.h \
- /usr/include/c++/11/set /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/stl_set.h \
- /usr/include/c++/11/bits/stl_multiset.h \
- /usr/include/c++/11/bits/erase_if.h \
- /usr/local/include/gtest/gtest-assertion-result.h \
- /usr/local/include/gtest/gtest-message.h \
- /usr/local/include/gtest/internal/gtest-port.h \
- /usr/include/c++/11/ciso646 /usr/include/c++/11/stdlib.h \
- /usr/include/c++/11/iostream /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets_nonio.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
- /usr/include/c++/11/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11/bits/locale_conv.h \
- /usr/include/x86_64-linux-gnu/sys/stat.h \
- /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
- /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
- /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
- /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
- /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
- /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
- /usr/local/include/gtest/internal/custom/gtest-port.h \
- /usr/local/include/gtest/internal/gtest-port-arch.h \
- /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/regex.h \
- /usr/include/c++/11/condition_variable \
- /usr/include/c++/11/bits/std_mutex.h \
- /usr/include/c++/11/bits/unique_lock.h /usr/include/c++/11/mutex \
- /usr/include/c++/11/any /usr/include/c++/11/optional \
- /usr/include/c++/11/bits/enable_special_members.h \
- /usr/include/c++/11/variant /usr/local/include/gtest/gtest-death-test.h \
- /usr/local/include/gtest/internal/gtest-death-test-internal.h \
- /usr/local/include/gtest/gtest-matchers.h /usr/include/c++/11/functional \
- /usr/include/c++/11/bits/std_function.h \
- /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
- /usr/include/c++/11/bits/hashtable_policy.h \
- /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/stl_algo.h \
- /usr/include/c++/11/bits/algorithmfwd.h \
- /usr/include/c++/11/bits/stl_heap.h \
- /usr/include/c++/11/bits/uniform_int_dist.h \
- /usr/local/include/gtest/gtest-printers.h \
- /usr/local/include/gtest/internal/gtest-internal.h \
- /usr/include/x86_64-linux-gnu/sys/wait.h /usr/include/signal.h \
- /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
- /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
- /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
- /usr/include/x86_64-linux-gnu/bits/sigaction.h \
- /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
- /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
- /usr/include/x86_64-linux-gnu/sys/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
- /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h /usr/include/c++/11/map \
- /usr/include/c++/11/bits/stl_map.h \
- /usr/include/c++/11/bits/stl_multimap.h \
- /usr/local/include/gtest/internal/gtest-filepath.h \
- /usr/local/include/gtest/internal/gtest-string.h \
- /usr/local/include/gtest/internal/gtest-type-util.h \
- /usr/include/c++/11/cxxabi.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
- /usr/local/include/gtest/internal/custom/gtest-printers.h \
- /usr/local/include/gtest/gtest-param-test.h /usr/include/c++/11/iterator \
- /usr/include/c++/11/bits/stream_iterator.h \
- /usr/local/include/gtest/internal/gtest-param-util.h \
- /usr/include/c++/11/cassert /usr/include/assert.h \
- /usr/local/include/gtest/gtest-test-part.h \
- /usr/local/include/gtest/gtest-typed-test.h \
- /usr/local/include/gtest/gtest_pred_impl.h \
- /usr/local/include/gtest/gtest_prod.h \
+ /usr/local/include/glog/vlog_is_on.h \
  /home/xiaohou/Desktop/mykuiper/./include/data/tensor.hpp \
  /usr/include/armadillo /usr/include/armadillo_bits/config.hpp \
  /usr/include/armadillo_bits/compiler_check.hpp \
@@ -312,12 +215,26 @@ test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o: \
  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/fstream \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/iostream \
+ /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/algorithm \
+ /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /usr/include/c++/11/complex /usr/include/c++/11/random \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/complex \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/random \
  /usr/include/c++/11/bits/random.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h \
@@ -325,10 +242,20 @@ test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+ /usr/include/c++/11/stdlib.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h \
  /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
  /usr/include/c++/11/bits/stl_numeric.h \
- /usr/include/c++/11/pstl/glue_numeric_defs.h \
+ /usr/include/c++/11/pstl/glue_numeric_defs.h /usr/include/c++/11/mutex \
+ /usr/include/c++/11/bits/std_mutex.h \
+ /usr/include/c++/11/bits/unique_lock.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
  /usr/include/armadillo_bits/compiler_setup.hpp \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
  /usr/include/armadillo_bits/include_hdf5.hpp \
