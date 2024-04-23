@@ -224,6 +224,54 @@ source/data/tensor_utils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.s
 .PHONY : source/data/tensor_utils.cpp.s
 
+source/runtime/pnnx/ir.o: source/runtime/pnnx/ir.cpp.o
+.PHONY : source/runtime/pnnx/ir.o
+
+# target to build an object file
+source/runtime/pnnx/ir.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o
+.PHONY : source/runtime/pnnx/ir.cpp.o
+
+source/runtime/pnnx/ir.i: source/runtime/pnnx/ir.cpp.i
+.PHONY : source/runtime/pnnx/ir.i
+
+# target to preprocess a source file
+source/runtime/pnnx/ir.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.i
+.PHONY : source/runtime/pnnx/ir.cpp.i
+
+source/runtime/pnnx/ir.s: source/runtime/pnnx/ir.cpp.s
+.PHONY : source/runtime/pnnx/ir.s
+
+# target to generate assembly for a file
+source/runtime/pnnx/ir.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.s
+.PHONY : source/runtime/pnnx/ir.cpp.s
+
+source/runtime/pnnx/store_zip.o: source/runtime/pnnx/store_zip.cpp.o
+.PHONY : source/runtime/pnnx/store_zip.o
+
+# target to build an object file
+source/runtime/pnnx/store_zip.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o
+.PHONY : source/runtime/pnnx/store_zip.cpp.o
+
+source/runtime/pnnx/store_zip.i: source/runtime/pnnx/store_zip.cpp.i
+.PHONY : source/runtime/pnnx/store_zip.i
+
+# target to preprocess a source file
+source/runtime/pnnx/store_zip.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.i
+.PHONY : source/runtime/pnnx/store_zip.cpp.i
+
+source/runtime/pnnx/store_zip.s: source/runtime/pnnx/store_zip.cpp.s
+.PHONY : source/runtime/pnnx/store_zip.s
+
+# target to generate assembly for a file
+source/runtime/pnnx/store_zip.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.s
+.PHONY : source/runtime/pnnx/store_zip.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -244,6 +292,12 @@ help:
 	@echo "... source/data/tensor_utils.o"
 	@echo "... source/data/tensor_utils.i"
 	@echo "... source/data/tensor_utils.s"
+	@echo "... source/runtime/pnnx/ir.o"
+	@echo "... source/runtime/pnnx/ir.i"
+	@echo "... source/runtime/pnnx/ir.s"
+	@echo "... source/runtime/pnnx/store_zip.o"
+	@echo "... source/runtime/pnnx/store_zip.i"
+	@echo "... source/runtime/pnnx/store_zip.s"
 .PHONY : help
 
 

@@ -5,7 +5,7 @@
 #include "tick.hpp"
 
 TEST(test_load, load_csv_data) {
-  using namespace mykuiper;
+  using namespace my_kuiper;
   const arma::fmat& data = CSVDataLoader::LoadData<float>("./tmp/data_loader/data1.csv");
   ASSERT_NE(data.empty(), true);
   ASSERT_EQ(data.n_rows, 3);
@@ -20,7 +20,7 @@ TEST(test_load, load_csv_data) {
 }
 
 TEST(test_load, load_csv_arange) {
-  using namespace mykuiper;
+  using namespace my_kuiper;
   const arma::fmat& data = CSVDataLoader::LoadData<float>("./tmp/data_loader/data2.csv");
   ASSERT_NE(data.empty(), true);
   ASSERT_EQ(data.n_rows, 3);
@@ -38,7 +38,7 @@ TEST(test_load, load_csv_arange) {
 }
 
 TEST(test_load, load_csv_missing_data1) {
-  using namespace mykuiper;
+  using namespace my_kuiper;
   const arma::fmat& data = CSVDataLoader::LoadData<float>("./tmp/data_loader/data4.csv");
   ASSERT_NE(data.empty(), true);
   ASSERT_EQ(data.n_rows, 3);
@@ -58,7 +58,7 @@ TEST(test_load, load_csv_missing_data1) {
 }
 
 TEST(test_load, load_csv_missing_data2) {
-  using namespace mykuiper;
+  using namespace my_kuiper;
   const arma::fmat& data = CSVDataLoader::LoadData<float>("./tmp/data_loader/data3.csv");
 
   ASSERT_NE(data.empty(), true);
@@ -84,7 +84,7 @@ TEST(test_load, load_csv_missing_data2) {
 }
 
 TEST(test_load, split_char) {
-  using namespace mykuiper;
+  using namespace my_kuiper;
   const arma::fmat& data = CSVDataLoader::LoadData<float>("./tmp/data_loader/data5.csv", '-');
 
   ASSERT_NE(data.empty(), true);
@@ -101,7 +101,7 @@ TEST(test_load, split_char) {
 }
 
 TEST(test_load, load_minus_data) {
-  using namespace mykuiper;
+  using namespace my_kuiper;
   const arma::fmat& data = CSVDataLoader::LoadData<float>("./tmp/data_loader/data6.csv", ',');
 
   ASSERT_NE(data.empty(), true);
@@ -123,7 +123,7 @@ TEST(test_load, load_minus_data) {
 }
 
 TEST(test_load, load_large_data) {
-  using namespace mykuiper;
+  using namespace my_kuiper;
   const arma::fmat& data = CSVDataLoader::LoadData<float>("./tmp/data_loader/data7.csv", ',');
   ASSERT_NE(data.empty(), true);
   ASSERT_EQ(data.n_rows, 1024);
@@ -144,7 +144,7 @@ TEST(test_load, load_large_data) {
 }
 
 TEST(test_load, load_large_data_int32) {
-  using namespace mykuiper;
+  using namespace my_kuiper;
   const arma::Mat<int32_t>& data =
       CSVDataLoader::LoadData<int32_t>("./tmp/data_loader/data7.csv", ',');
   ASSERT_NE(data.empty(), true);

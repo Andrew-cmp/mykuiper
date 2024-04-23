@@ -7,6 +7,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/kuiper.dir/source/data/tensor.cpp.o.d"
   "CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o"
   "CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o.d"
+  "CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o"
+  "CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o.d"
+  "CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o"
+  "CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

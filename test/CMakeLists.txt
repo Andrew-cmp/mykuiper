@@ -9,8 +9,6 @@ aux_source_directory(../test/test_data DIR_TEST_DATA)
 aux_source_directory(../test/test_layer DIR_TEST_LAYER)
 aux_source_directory(../test/test_net DIR_TEST_NET)
 aux_source_directory(../test/test_runtime DIR_TEST_RUNTIME)
-
-
 set(link_lib glog::glog GTest::gtest)
 if (!WIN32)
     set(link_lib "${link_lib} pthread")
@@ -30,10 +28,10 @@ if (MSVC)
             $<TARGET_FILE_DIR:test_kuiper>)
 endif ()
 
-
 target_include_directories(test_kuiper PUBLIC ${glog_INCLUDE_DIR})
 target_include_directories(test_kuiper PUBLIC ${GTest_INCLUDE_DIR})
 target_include_directories(test_kuiper PUBLIC ${Armadillo_INCLUDE_DIR})
+
 set_target_properties(test_kuiper PROPERTIES
         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
 )

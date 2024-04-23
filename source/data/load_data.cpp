@@ -14,7 +14,7 @@
 #include <fstream>
 #include <string>
 #include <utility>
-namespace mykuiper{
+namespace my_kuiper{
 
 
 std::pair<size_t,size_t> CSVDataLoader::GetMatrixSize(std::ifstream& file, char split_char){

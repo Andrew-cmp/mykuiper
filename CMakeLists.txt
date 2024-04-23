@@ -40,6 +40,14 @@ target_include_directories(kuiper PUBLIC ${glog_INCLUDE_DIR})
 target_include_directories(kuiper PUBLIC ${GTest_INCLUDE_DIR})
 target_include_directories(kuiper PUBLIC ${Armadillo_INCLUDE_DIR})
 
+# add_executable(main main.cpp ${DIR_DATA} ${DIR_PARSER} ${DIR_MATH} ${DIR_UTILS} ${DIR_RUNTIME} ${DIR_ABSTRACT_LAYER} ${DIR_BINOCULAR_LAYER} ${DIR_PARSER} )
+# target_link_libraries(main ${link_lib} ${link_math_lib})
+# target_link_directories(main PUBLIC ${PROJECT_SOURCE_DIR}/lib)
+# target_link_libraries(main kuiper)
+# target_include_directories(main PUBLIC ${glog_INCLUDE_DIR})
+# target_include_directories(main PUBLIC ${GTest_INCLUDE_DIR})
+# target_include_directories(main PUBLIC ${Armadillo_INCLUDE_DIR})
+
 # # mathfun library defines，这是干嘛的
 # add_compile_definitions(SSE_MATHFUN_WITH_CODE USE_SSE_AUTO)
 

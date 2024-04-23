@@ -16,7 +16,7 @@
 #include <armadillo>
 #include <string>
 #include <filesystem>
-namespace mykuiper{
+namespace my_kuiper{
 class CSVDataLoader {
  public:
   template <typename T>

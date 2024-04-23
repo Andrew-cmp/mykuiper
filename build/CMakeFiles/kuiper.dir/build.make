@@ -111,11 +111,41 @@ CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xiaohou/Desktop/mykuiper/source/data/tensor_utils.cpp -o CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.s
 
+CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o: CMakeFiles/kuiper.dir/flags.make
+CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o: ../source/runtime/pnnx/ir.cpp
+CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o: CMakeFiles/kuiper.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xiaohou/Desktop/mykuiper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o -MF CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o.d -o CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o -c /home/xiaohou/Desktop/mykuiper/source/runtime/pnnx/ir.cpp
+
+CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xiaohou/Desktop/mykuiper/source/runtime/pnnx/ir.cpp > CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.i
+
+CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xiaohou/Desktop/mykuiper/source/runtime/pnnx/ir.cpp -o CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.s
+
+CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o: CMakeFiles/kuiper.dir/flags.make
+CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o: ../source/runtime/pnnx/store_zip.cpp
+CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o: CMakeFiles/kuiper.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xiaohou/Desktop/mykuiper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o -MF CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o.d -o CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o -c /home/xiaohou/Desktop/mykuiper/source/runtime/pnnx/store_zip.cpp
+
+CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xiaohou/Desktop/mykuiper/source/runtime/pnnx/store_zip.cpp > CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.i
+
+CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xiaohou/Desktop/mykuiper/source/runtime/pnnx/store_zip.cpp -o CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.s
+
 # Object files for target kuiper
 kuiper_OBJECTS = \
 "CMakeFiles/kuiper.dir/source/data/load_data.cpp.o" \
 "CMakeFiles/kuiper.dir/source/data/tensor.cpp.o" \
-"CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o"
+"CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o" \
+"CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o" \
+"CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o"
 
 # External object files for target kuiper
 kuiper_EXTERNAL_OBJECTS =
@@ -123,6 +153,8 @@ kuiper_EXTERNAL_OBJECTS =
 ../lib/libkuiper.so: CMakeFiles/kuiper.dir/source/data/load_data.cpp.o
 ../lib/libkuiper.so: CMakeFiles/kuiper.dir/source/data/tensor.cpp.o
 ../lib/libkuiper.so: CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o
+../lib/libkuiper.so: CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o
+../lib/libkuiper.so: CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o
 ../lib/libkuiper.so: CMakeFiles/kuiper.dir/build.make
 ../lib/libkuiper.so: /usr/local/lib/libglog.so.0.8.0
 ../lib/libkuiper.so: /usr/lib/x86_64-linux-gnu/libarmadillo.so
@@ -132,7 +164,7 @@ kuiper_EXTERNAL_OBJECTS =
 ../lib/libkuiper.so: /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so
 ../lib/libkuiper.so: /usr/lib/x86_64-linux-gnu/libpthread.a
 ../lib/libkuiper.so: CMakeFiles/kuiper.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xiaohou/Desktop/mykuiper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../lib/libkuiper.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xiaohou/Desktop/mykuiper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library ../lib/libkuiper.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kuiper.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
