@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/xiaohou/Desktop/mykuiper/test/test_data/test_load_data.cpp" "test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o" "gcc" "test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o.d"
-  "/home/xiaohou/Desktop/mykuiper/test/test_data/test_tensor.cpp" "test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o" "gcc" "test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o.d"
-  "/home/xiaohou/Desktop/mykuiper/test/test_main.cpp" "test/CMakeFiles/test_kuiper.dir/test_main.cpp.o" "gcc" "test/CMakeFiles/test_kuiper.dir/test_main.cpp.o.d"
+  "/home/xiaohou/Desktop/myinfer/test/test_data/test_load_data.cpp" "test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o" "gcc" "test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o.d"
+  "/home/xiaohou/Desktop/myinfer/test/test_data/test_tensor.cpp" "test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o" "gcc" "test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o.d"
+  "/home/xiaohou/Desktop/myinfer/test/test_main.cpp" "test/CMakeFiles/test_kuiper.dir/test_main.cpp.o" "gcc" "test/CMakeFiles/test_kuiper.dir/test_main.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/xiaohou/Desktop/mykuiper/build/CMakeFiles/kuiper.dir/DependInfo.cmake"
+  "/home/xiaohou/Desktop/myinfer/build/CMakeFiles/kuiper.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

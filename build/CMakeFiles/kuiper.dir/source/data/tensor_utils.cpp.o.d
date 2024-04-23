@@ -1,5 +1,5 @@
 CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o: \
- /home/xiaohou/Desktop/mykuiper/source/data/tensor_utils.cpp \
+ /home/xiaohou/Desktop/myinfer/source/data/tensor_utils.cpp \
  /usr/include/stdc-predef.h /usr/local/include/glog/logging.h \
  /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -183,7 +183,7 @@ CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o: \
  /usr/local/include/glog/platform.h /usr/local/include/glog/types.h \
  /usr/local/include/glog/log_severity.h \
  /usr/local/include/glog/vlog_is_on.h \
- /home/xiaohou/Desktop/mykuiper/./include/data/tensor.hpp \
+ /home/xiaohou/Desktop/myinfer/./include/data/tensor.hpp \
  /usr/include/armadillo /usr/include/armadillo_bits/config.hpp \
  /usr/include/armadillo_bits/compiler_check.hpp \
  /usr/include/c++/11/climits \
@@ -880,4 +880,4 @@ CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o: \
  /usr/include/armadillo_bits/newarp_UpperHessenbergEigen_meat.hpp \
  /usr/include/armadillo_bits/newarp_UpperHessenbergQR_meat.hpp \
  /usr/include/armadillo_bits/compiler_setup_post.hpp \
- /home/xiaohou/Desktop/mykuiper/./include/data/tensor_util.hpp
+ /home/xiaohou/Desktop/myinfer/./include/data/tensor_util.hpp

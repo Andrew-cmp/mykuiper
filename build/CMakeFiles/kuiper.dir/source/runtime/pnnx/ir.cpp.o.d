@@ -1,7 +1,7 @@
 CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o: \
- /home/xiaohou/Desktop/mykuiper/source/runtime/pnnx/ir.cpp \
+ /home/xiaohou/Desktop/myinfer/source/runtime/pnnx/ir.cpp \
  /usr/include/stdc-predef.h \
- /home/xiaohou/Desktop/mykuiper/./include/runtime/pnnx/ir.h \
+ /home/xiaohou/Desktop/myinfer/./include/runtime/pnnx/ir.h \
  /usr/include/c++/11/initializer_list \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -194,4 +194,4 @@ CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o: \
  /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/stack \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/bits/stl_stack.h \
- /home/xiaohou/Desktop/mykuiper/./include/runtime/pnnx/store_zip.hpp
+ /home/xiaohou/Desktop/myinfer/./include/runtime/pnnx/store_zip.hpp

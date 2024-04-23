@@ -5,7 +5,7 @@ int main(){
     #ifdef KUIPER_INFER_DATA_BLOB_HPP_
     printf("2");
     #endif
-    my_kuiper::Tensor<float> f1(3, 224, 224);
+    my_infer::Tensor<float> f1(3, 224, 224);
     f1.Fill(1);
     printf("%d",1);
     

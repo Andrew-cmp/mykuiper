@@ -25,7 +25,7 @@
 #define KUIPER_INFER_TENSOR_UTIL_H
 #include "data/tensor.hpp"
 
-namespace my_kuiper {
+namespace my_infer {
 
 /**
  * @brief Broadcasts two tensors

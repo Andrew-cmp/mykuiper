@@ -5,7 +5,7 @@
 #include <memory>
 #include <numeric>
 #include <vector>
-namespace my_kuiper{
+namespace my_infer{
 template<typename T>
 class Tensor{
     public:

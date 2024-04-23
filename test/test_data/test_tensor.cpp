@@ -27,7 +27,7 @@
 #include "data/tensor_util.hpp"
 
 TEST(test_tensor, tensor_init1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f1(3, 224, 224);
   ASSERT_EQ(f1.channels(), 3);
   ASSERT_EQ(f1.rows(), 224);
@@ -36,7 +36,7 @@ TEST(test_tensor, tensor_init1) {
 }
 
 TEST(test_tensor, tensor_init1_1d) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f1(3);
   const auto& raw_shapes = f1.raw_shapes();
   ASSERT_EQ(raw_shapes.size(), 1);
@@ -44,7 +44,7 @@ TEST(test_tensor, tensor_init1_1d) {
 }
 
 TEST(test_tensor, tensor_init1_2d) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f1(32, 24);
   const auto& raw_shapes = f1.raw_shapes();
   ASSERT_EQ(raw_shapes.size(), 2);
@@ -53,7 +53,7 @@ TEST(test_tensor, tensor_init1_2d) {
 }
 
 TEST(test_tensor, test_init1_2d_1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f1(1, 24);
   const auto& raw_shapes = f1.raw_shapes();
   ASSERT_EQ(raw_shapes.size(), 1);
@@ -61,7 +61,7 @@ TEST(test_tensor, test_init1_2d_1) {
 }
 
 TEST(test_tensor, tensor_init2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f1(std::vector<uint32_t>{3, 224, 224});
   ASSERT_EQ(f1.channels(), 3);
   ASSERT_EQ(f1.rows(), 224);
@@ -70,7 +70,7 @@ TEST(test_tensor, tensor_init2) {
 }
 
 TEST(test_tensor, tensor_init3) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f1(std::vector<uint32_t>{1, 13, 14});
   ASSERT_EQ(f1.channels(), 1);
   ASSERT_EQ(f1.rows(), 13);
@@ -79,7 +79,7 @@ TEST(test_tensor, tensor_init3) {
 }
 
 TEST(test_tensor, tensor_init4) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f1(std::vector<uint32_t>{13, 15});
   ASSERT_EQ(f1.channels(), 1);
   ASSERT_EQ(f1.rows(), 13);
@@ -88,7 +88,7 @@ TEST(test_tensor, tensor_init4) {
 }
 
 TEST(test_tensor, tensor_init5) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f1(std::vector<uint32_t>{16, 13, 15});
   ASSERT_EQ(f1.channels(), 16);
   ASSERT_EQ(f1.rows(), 13);
@@ -97,7 +97,7 @@ TEST(test_tensor, tensor_init5) {
 }
 
 TEST(test_tensor, copy_construct1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f1(3, 224, 224);
   f1.RandN();
   Tensor<float> f2(f1);
@@ -109,7 +109,7 @@ TEST(test_tensor, copy_construct1) {
 }
 
 TEST(test_tensor, copy_construct2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f1(3, 2, 1);
   Tensor<float> f2(3, 224, 224);
   f2.RandN();
@@ -122,7 +122,7 @@ TEST(test_tensor, copy_construct2) {
 }
 
 TEST(test_tensor, copy_construct3) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f1(3, 2, 1);
   Tensor<float> f2(std::vector<uint32_t>{3, 224, 224});
   f2.RandN();
@@ -135,7 +135,7 @@ TEST(test_tensor, copy_construct3) {
 }
 
 TEST(test_tensor, move_construct1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f1(3, 2, 1);
   Tensor<float> f2(3, 224, 224);
   f1 = std::move(f2);
@@ -147,7 +147,7 @@ TEST(test_tensor, move_construct1) {
 }
 
 TEST(test_tensor, move_construct2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f2(3, 224, 224);
   Tensor<float> f1(std::move(f2));
   ASSERT_EQ(f1.channels(), 3);
@@ -158,7 +158,7 @@ TEST(test_tensor, move_construct2) {
 }
 
 TEST(test_tensor, set_data) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f2(3, 224, 224);
   arma::fcube cube1(224, 224, 3);
   cube1.randn();
@@ -168,7 +168,7 @@ TEST(test_tensor, set_data) {
 }
 
 TEST(test_tensor, data) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f2(3, 224, 224);
   f2.Fill(1.f);
   arma::fcube cube1(224, 224, 3);
@@ -179,7 +179,7 @@ TEST(test_tensor, data) {
 }
 
 TEST(test_tensor, empty) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f2;
   ASSERT_EQ(f2.empty(), true);
 
@@ -188,7 +188,7 @@ TEST(test_tensor, empty) {
 }
 
 TEST(test_tensor, transform1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
 
   Tensor<float> f3(3, 3, 3);
   ASSERT_EQ(f3.empty(), false);
@@ -199,7 +199,7 @@ TEST(test_tensor, transform1) {
 }
 
 TEST(test_tensor, transform2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
 
   Tensor<float> f3(3, 3, 3);
   ASSERT_EQ(f3.empty(), false);
@@ -211,7 +211,7 @@ TEST(test_tensor, transform2) {
 }
 
 TEST(test_tensor, clone) {
-  using namespace my_kuiper;
+  using namespace my_infer;
 
   std::shared_ptr<Tensor<float>> f3 = std::make_shared<Tensor<float>>(3, 3, 3);
   ASSERT_EQ(f3->empty(), false);
@@ -226,21 +226,21 @@ TEST(test_tensor, clone) {
 }
 
 TEST(test_tensor, raw_ptr) {
-  using namespace my_kuiper;
+  using namespace my_infer;
 
   Tensor<float> f3(3, 3, 3);
   ASSERT_EQ(f3.raw_ptr(), f3.data().mem);
 }
 
 TEST(test_tensor, raw_ptr2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
 
   Tensor<float> f3(3, 3, 3);
   ASSERT_EQ(f3.raw_ptr(1), f3.data().mem + 1);
 }
 
 TEST(test_tensor, index1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f3(3, 3, 3);
   ASSERT_EQ(f3.empty(), false);
   std::vector<float> values;
@@ -254,14 +254,14 @@ TEST(test_tensor, index1) {
 }
 
 TEST(test_tensor, index2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f3(3, 3, 3);
   f3.index(3) = 4;
   ASSERT_EQ(f3.index(3), 4);
 }
 
 TEST(test_tensor, flatten1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
 
   Tensor<float> f3(3, 3, 3);
   std::vector<float> values;
@@ -287,7 +287,7 @@ TEST(test_tensor, flatten1) {
 }
 
 TEST(test_tensor, flatten2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
 
   Tensor<float> f3(3, 3, 3);
   std::vector<float> values;
@@ -302,7 +302,7 @@ TEST(test_tensor, flatten2) {
 }
 
 TEST(test_tensor, fill1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
 
   Tensor<float> f3(3, 3, 3);
   std::vector<float> values;
@@ -322,7 +322,7 @@ TEST(test_tensor, fill1) {
 }
 
 TEST(test_tensor, fill2_colmajor1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
 
   Tensor<float> f3(3, 3, 3);
   std::vector<float> values;
@@ -336,7 +336,7 @@ TEST(test_tensor, fill2_colmajor1) {
 }
 
 TEST(test_tensor, fill2_colmajor2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
 
   Tensor<float> f3(1, 27, 1);
   std::vector<float> values;
@@ -350,7 +350,7 @@ TEST(test_tensor, fill2_colmajor2) {
 }
 
 TEST(test_tensor, create1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const std::shared_ptr<ftensor>& tensor_ptr = TensorCreate<float>(3, 32, 32);
   ASSERT_EQ(tensor_ptr->empty(), false);
   ASSERT_EQ(tensor_ptr->channels(), 3);
@@ -359,7 +359,7 @@ TEST(test_tensor, create1) {
 }
 
 TEST(test_tensor, create2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const std::shared_ptr<ftensor>& tensor_ptr = TensorCreate<float>({3, 32, 32});
   ASSERT_EQ(tensor_ptr->empty(), false);
   ASSERT_EQ(tensor_ptr->channels(), 3);
@@ -368,7 +368,7 @@ TEST(test_tensor, create2) {
 }
 
 TEST(test_tensor, tensor_broadcast1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const std::shared_ptr<ftensor>& tensor1 = TensorCreate<float>({3, 1, 1});
   const std::shared_ptr<ftensor>& tensor2 = TensorCreate<float>({3, 32, 32});
 
@@ -385,7 +385,7 @@ TEST(test_tensor, tensor_broadcast1) {
 }
 
 TEST(test_tensor, tensor_broadcast2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const std::shared_ptr<ftensor>& tensor1 = TensorCreate<float>({3, 32, 32});
   const std::shared_ptr<ftensor>& tensor2 = TensorCreate<float>({3, 1, 1});
   tensor2->RandN();
@@ -409,7 +409,7 @@ TEST(test_tensor, tensor_broadcast2) {
 }
 
 TEST(test_tensor, fill2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
 
   Tensor<float> f3(3, 3, 3);
   f3.Fill(1.f);
@@ -423,7 +423,7 @@ TEST(test_tensor, fill2) {
 }
 
 TEST(test_tensor, add1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const auto& f1 = std::make_shared<Tensor<float>>(3, 224, 224);
   f1->Fill(1.f);
   const auto& f2 = std::make_shared<Tensor<float>>(3, 224, 224);
@@ -435,7 +435,7 @@ TEST(test_tensor, add1) {
 }
 
 TEST(test_tensor, add2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const auto& f1 = std::make_shared<Tensor<float>>(3, 224, 224);
   f1->Fill(1.f);
   const auto& f2 = std::make_shared<Tensor<float>>(3, 1, 1);
@@ -447,7 +447,7 @@ TEST(test_tensor, add2) {
 }
 
 TEST(test_tensor, add3) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const auto& f1 = std::make_shared<Tensor<float>>(3, 224, 224);
   f1->Fill(1.f);
   const auto& f2 = std::make_shared<Tensor<float>>(3, 1, 1);
@@ -459,7 +459,7 @@ TEST(test_tensor, add3) {
 }
 
 TEST(test_tensor, add4) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const auto& f1 = std::make_shared<Tensor<float>>(3, 224, 224);
   f1->Fill(1.f);
   const auto& f2 = std::make_shared<Tensor<float>>(3, 224, 224);
@@ -471,7 +471,7 @@ TEST(test_tensor, add4) {
 }
 
 TEST(test_tensor, mul1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const auto& f1 = std::make_shared<Tensor<float>>(3, 224, 224);
   f1->Fill(3.f);
   const auto& f2 = std::make_shared<Tensor<float>>(3, 224, 224);
@@ -483,7 +483,7 @@ TEST(test_tensor, mul1) {
 }
 
 TEST(test_tensor, mul2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const auto& f1 = std::make_shared<Tensor<float>>(3, 224, 224);
   f1->Fill(3.f);
   const auto& f2 = std::make_shared<Tensor<float>>(3, 1, 1);
@@ -495,7 +495,7 @@ TEST(test_tensor, mul2) {
 }
 
 TEST(test_tensor, mul3) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const auto& f1 = std::make_shared<Tensor<float>>(3, 224, 224);
   f1->Fill(3.f);
   const auto& f2 = std::make_shared<Tensor<float>>(3, 224, 224);
@@ -507,7 +507,7 @@ TEST(test_tensor, mul3) {
 }
 
 TEST(test_tensor, mul4) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const auto& f1 = std::make_shared<Tensor<float>>(3, 224, 224);
   f1->Fill(3.f);
   const auto& f2 = std::make_shared<Tensor<float>>(3, 1, 1);
@@ -519,7 +519,7 @@ TEST(test_tensor, mul4) {
 }
 
 TEST(test_tensor, mul5) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const auto& f1 = std::make_shared<Tensor<float>>(3, 224, 224);
   f1->Fill(3.f);
   const auto& f2 = std::make_shared<Tensor<float>>(3, 1, 1);
@@ -533,7 +533,7 @@ TEST(test_tensor, mul5) {
 }
 
 TEST(test_tensor, mul6) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const auto& f1 = std::make_shared<Tensor<float>>(3, 224, 224);
   f1->Fill(3.f);
   const auto& f2 = std::make_shared<Tensor<float>>(3, 1, 1);
@@ -547,7 +547,7 @@ TEST(test_tensor, mul6) {
 }
 
 TEST(test_tensor, add5) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const auto& f1 = std::make_shared<Tensor<float>>(3, 224, 224);
   f1->Fill(3.f);
   const auto& f2 = std::make_shared<Tensor<float>>(3, 1, 1);
@@ -561,7 +561,7 @@ TEST(test_tensor, add5) {
 }
 
 TEST(test_tensor, add6) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const auto& f1 = std::make_shared<Tensor<float>>(3, 224, 224);
   f1->Fill(3.f);
   const auto& f2 = std::make_shared<Tensor<float>>(3, 1, 1);
@@ -575,7 +575,7 @@ TEST(test_tensor, add6) {
 }
 
 TEST(test_tensor, shapes) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f3(2, 3, 4);
   const std::vector<uint32_t>& shapes = f3.shapes();
   ASSERT_EQ(shapes.at(0), 2);
@@ -584,7 +584,7 @@ TEST(test_tensor, shapes) {
 }
 
 TEST(test_tensor, raw_shapes1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f3(2, 3, 4);
   f3.Reshape({24});
   const auto& shapes = f3.raw_shapes();
@@ -593,7 +593,7 @@ TEST(test_tensor, raw_shapes1) {
 }
 
 TEST(test_tensor, raw_shapes2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f3(2, 3, 4);
   f3.Reshape({4, 6});
   const auto& shapes = f3.raw_shapes();
@@ -603,7 +603,7 @@ TEST(test_tensor, raw_shapes2) {
 }
 
 TEST(test_tensor, raw_shapes3) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f3(2, 3, 4);
   f3.Reshape({4, 3, 2});
   const auto& shapes = f3.raw_shapes();
@@ -614,7 +614,7 @@ TEST(test_tensor, raw_shapes3) {
 }
 
 TEST(test_tensor, raw_view1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f3(2, 3, 4);
   f3.Reshape({24}, true);
   const auto& shapes = f3.raw_shapes();
@@ -623,7 +623,7 @@ TEST(test_tensor, raw_view1) {
 }
 
 TEST(test_tensor, raw_view2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f3(2, 3, 4);
   f3.Reshape({4, 6}, true);
   const auto& shapes = f3.raw_shapes();
@@ -633,7 +633,7 @@ TEST(test_tensor, raw_view2) {
 }
 
 TEST(test_tensor, raw_view3) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> f3(2, 3, 4);
   f3.Reshape({4, 3, 2}, true);
   const auto& shapes = f3.raw_shapes();
@@ -644,7 +644,7 @@ TEST(test_tensor, raw_view3) {
 }
 
 TEST(test_tensor, padding1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> tensor(3, 4, 5);
   ASSERT_EQ(tensor.channels(), 3);
   ASSERT_EQ(tensor.rows(), 4);
@@ -670,7 +670,7 @@ TEST(test_tensor, padding1) {
 }
 
 TEST(test_tensor, padding2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   ftensor tensor(3, 4, 5);
   ASSERT_EQ(tensor.channels(), 3);
   ASSERT_EQ(tensor.rows(), 4);
@@ -700,7 +700,7 @@ TEST(test_tensor, padding2) {
 }
 
 TEST(test_tensor, review1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> tensor(3, 4, 5);
   std::vector<float> values;
   for (int i = 0; i < 60; ++i) {
@@ -748,7 +748,7 @@ TEST(test_tensor, review1) {
 }
 
 TEST(test_tensor, review2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   arma::fmat f1 =
       "1,2,3,4;"
       "5,6,7,8";
@@ -770,7 +770,7 @@ TEST(test_tensor, review2) {
 }
 
 TEST(test_tensor, review3) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   arma::fmat f1 =
       "1,2,3,4;"
       "5,6,7,8";
@@ -792,7 +792,7 @@ TEST(test_tensor, review3) {
 }
 
 TEST(test_tensor, review4) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   arma::fmat f1 =
       "1,2,3,4;"
       "5,6,7,8";
@@ -821,7 +821,7 @@ TEST(test_tensor, review4) {
 }
 
 TEST(test_tensor, reshape1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   arma::fmat f1 =
       "1,3;"
       "2,4";
@@ -844,7 +844,7 @@ TEST(test_tensor, reshape1) {
 }
 
 TEST(test_tensor, reshape2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   arma::fmat f1 =
       "0,2;"
       "1,3";
@@ -867,7 +867,7 @@ TEST(test_tensor, reshape2) {
 }
 
 TEST(test_tensor, ones) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> tensor(3, 4, 5);
   tensor.Ones();
   for (int i = 0; i < tensor.size(); ++i) {
@@ -876,7 +876,7 @@ TEST(test_tensor, ones) {
 }
 
 TEST(test_tensor, rand) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> tensor(3, 4, 5);
   tensor.Fill(99.f);
   tensor.RandN();  // 0 ~ 1
@@ -886,7 +886,7 @@ TEST(test_tensor, rand) {
 }
 
 TEST(test_tensor, get_data) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> tensor(3, 4, 5);
   ASSERT_EQ(tensor.channels(), 3);
   arma::fmat in2(4, 5);
@@ -897,14 +897,14 @@ TEST(test_tensor, get_data) {
 }
 
 TEST(test_tensor, at1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> tensor(3, 4, 5);
   tensor.at(0, 1, 2) = 2;
   ASSERT_EQ(tensor.at(0, 1, 2), 2);
 }
 
 TEST(test_tensor, at2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> tensor(3, 4, 5);
   arma::fmat f(4, 5);
   f.fill(1.f);
@@ -913,7 +913,7 @@ TEST(test_tensor, at2) {
 }
 
 TEST(test_tensor, at3) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   Tensor<float> tensor(3, 4, 5);
   tensor.Fill(1.2f);
   for (uint32_t c = 0; c < tensor.channels(); ++c) {
@@ -926,7 +926,7 @@ TEST(test_tensor, at3) {
 }
 
 TEST(test_tensor, is_same1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   std::shared_ptr<Tensor<float>> in1 = std::make_shared<Tensor<float>>(3, 32, 32);
   in1->Fill(2.f);
 
@@ -936,7 +936,7 @@ TEST(test_tensor, is_same1) {
 }
 
 TEST(test_tensor, is_same2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   std::shared_ptr<Tensor<float>> in1 = std::make_shared<Tensor<float>>(3, 32, 32);
   in1->Fill(1.f);
 
@@ -946,7 +946,7 @@ TEST(test_tensor, is_same2) {
 }
 
 TEST(test_tensor, is_same3) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   std::shared_ptr<Tensor<float>> in1 = std::make_shared<Tensor<float>>(3, 32, 32);
   in1->Fill(1.f);
 
@@ -956,7 +956,7 @@ TEST(test_tensor, is_same3) {
 }
 
 TEST(test_tensor, tensor_padding1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   sftensor tensor = TensorCreate<float>(3, 4, 5);
   ASSERT_EQ(tensor->channels(), 3);
   ASSERT_EQ(tensor->rows(), 4);
@@ -986,7 +986,7 @@ TEST(test_tensor, tensor_padding1) {
 }
 
 TEST(test_tensor, tensor_values_row1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const uint32_t size = 60;
   std::vector<float> values_in;
   for (uint32_t i = 0; i < size; ++i) {
@@ -1001,7 +1001,7 @@ TEST(test_tensor, tensor_values_row1) {
 }
 
 TEST(test_tensor, tensor_values_row2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const uint32_t size = 60;
   std::vector<float> values_in;
   for (uint32_t i = 0; i < size; ++i) {
@@ -1016,7 +1016,7 @@ TEST(test_tensor, tensor_values_row2) {
 }
 
 TEST(test_tensor, tensor_values_col1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   const uint32_t size = 4;
   std::vector<float> values_in;
   for (uint32_t i = 0; i < size; ++i) {
@@ -1032,21 +1032,21 @@ TEST(test_tensor, tensor_values_col1) {
 }
 
 TEST(test_tensor, tensor_create1) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   sftensor tensor = TensorCreate<float>(std::vector<uint32_t>{1, 2});
   ASSERT_EQ(tensor->raw_shapes().size(), 1);
   ASSERT_EQ(tensor->raw_shapes().at(0), 2);
 }
 
 TEST(test_tensor, tensor_create2) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   sftensor tensor = TensorCreate<float>(std::vector<uint32_t>{3});
   ASSERT_EQ(tensor->raw_shapes().size(), 1);
   ASSERT_EQ(tensor->raw_shapes().at(0), 3);
 }
 
 TEST(test_tensor, tensor_create3) {
-  using namespace my_kuiper;
+  using namespace my_infer;
   sftensor tensor = TensorCreate<float>(std::vector<uint32_t>{3, 12, 32});
   ASSERT_EQ(tensor->raw_shapes().size(), 3);
   ASSERT_EQ(tensor->raw_shapes().at(0), 3);

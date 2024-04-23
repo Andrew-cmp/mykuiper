@@ -1,4 +1,4 @@
-# Install script for directory: /home/xiaohou/Desktop/mykuiper/bench
+# Install script for directory: /home/xiaohou/Desktop/myinfer/bench
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

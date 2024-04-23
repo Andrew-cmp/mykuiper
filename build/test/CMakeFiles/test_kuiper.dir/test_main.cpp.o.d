@@ -1,5 +1,5 @@
 test/CMakeFiles/test_kuiper.dir/test_main.cpp.o: \
- /home/xiaohou/Desktop/mykuiper/test/test_main.cpp \
+ /home/xiaohou/Desktop/myinfer/test/test_main.cpp \
  /usr/include/stdc-predef.h /usr/local/include/glog/logging.h \
  /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

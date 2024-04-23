@@ -1,22 +1,12 @@
-/**
- * @file load_data.hpp
- * @author xiaohou (you@domain.com)
- * @brief 
- * @version 0.1
- * @date 2024-04-08
- * 
- * @copyright Copyright (c) 2024
- * 
- */
 ///哦我明白了，给每一个头文件一个唯一标识，这个标识用宏来定义。比如这里load_data.hpp的唯一宏定义标识为MYKUIPER_INFER_INCLUDE_DATA_LOAD_DATA_HPP_
 ///然后使用ifndef 和 ifdef来判断包含的头文件是否已经宏定义过这个表示，进而来判断load_data.hpp是否已被包含。
-#ifndef KUIPER_INFER_INCLUDE_DATA_LOAD_DATA_HPP_
-#define KUIPER_INFER_INCLUDE_DATA_LOAD_DATA_HPP_
+#ifndef MY_INFER_INCLUDE_DATA_LOAD_DATA_HPP_
+#define MY_INFER_INCLUDE_DATA_LOAD_DATA_HPP_
 #include <glog/logging.h>
 #include <armadillo>
 #include <string>
 #include <filesystem>
-namespace my_kuiper{
+namespace my_infer{
 class CSVDataLoader {
  public:
   template <typename T>
@@ -82,4 +72,4 @@ arma::Mat<T> CSVDataLoader::LoadData(const std::string& file_path, const char sp
 }
 }// namespace mykuiper
 
-#endif  // MYKUIPER_INFER_INCLUDE_DATA_LOAD_DATA_HPP_
+#endif  // MY_INFER_INCLUDE_DATA_LOAD_DATA_HPP_

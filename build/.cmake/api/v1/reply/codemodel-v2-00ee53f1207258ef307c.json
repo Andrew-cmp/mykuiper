@@ -60,7 +60,7 @@
 						1,
 						2
 					],
-					"name" : "mykuiper",
+					"name" : "myinfer",
 					"targetIndexes" : 
 					[
 						0,
@@ -73,14 +73,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "kuiper::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-kuiper-ff4943517a291dc3e62d.json",
+					"jsonFile" : "target-kuiper-3e85b4a1d332acf632fd.json",
 					"name" : "kuiper",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_kuiper::@36f028580bb02cc8272a",
-					"jsonFile" : "target-test_kuiper-d2bfbc6e0ec9078df2c0.json",
+					"jsonFile" : "target-test_kuiper-2a96fd05beff75394974.json",
 					"name" : "test_kuiper",
 					"projectIndex" : 0
 				}
@@ -90,8 +90,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/xiaohou/Desktop/mykuiper/build",
-		"source" : "/home/xiaohou/Desktop/mykuiper"
+		"build" : "/home/xiaohou/Desktop/myinfer/build",
+		"source" : "/home/xiaohou/Desktop/myinfer"
 	},
 	"version" : 
 	{

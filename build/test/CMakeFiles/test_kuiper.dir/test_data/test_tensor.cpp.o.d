@@ -1,5 +1,5 @@
 test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o: \
- /home/xiaohou/Desktop/mykuiper/test/test_data/test_tensor.cpp \
+ /home/xiaohou/Desktop/myinfer/test/test_data/test_tensor.cpp \
  /usr/include/stdc-predef.h /usr/local/include/glog/logging.h \
  /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -280,7 +280,7 @@ test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o: \
  /usr/local/include/gtest/gtest-typed-test.h \
  /usr/local/include/gtest/gtest_pred_impl.h \
  /usr/local/include/gtest/gtest_prod.h \
- /home/xiaohou/Desktop/mykuiper/./include/data/tensor.hpp \
+ /home/xiaohou/Desktop/myinfer/./include/data/tensor.hpp \
  /usr/include/armadillo /usr/include/armadillo_bits/config.hpp \
  /usr/include/armadillo_bits/compiler_check.hpp \
  /usr/include/c++/11/climits \
@@ -953,4 +953,4 @@ test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o: \
  /usr/include/armadillo_bits/newarp_UpperHessenbergEigen_meat.hpp \
  /usr/include/armadillo_bits/newarp_UpperHessenbergQR_meat.hpp \
  /usr/include/armadillo_bits/compiler_setup_post.hpp \
- /home/xiaohou/Desktop/mykuiper/./include/data/tensor_util.hpp
+ /home/xiaohou/Desktop/myinfer/./include/data/tensor_util.hpp

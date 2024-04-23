@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xiaohou/Desktop/mykuiper
+CMAKE_SOURCE_DIR = /home/xiaohou/Desktop/myinfer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xiaohou/Desktop/mykuiper/build
+CMAKE_BINARY_DIR = /home/xiaohou/Desktop/myinfer/build
 
 # Include any dependencies generated for this target.
 include test/CMakeFiles/test_kuiper.dir/depend.make
@@ -72,44 +72,44 @@ include test/CMakeFiles/test_kuiper.dir/flags.make
 test/CMakeFiles/test_kuiper.dir/test_main.cpp.o: test/CMakeFiles/test_kuiper.dir/flags.make
 test/CMakeFiles/test_kuiper.dir/test_main.cpp.o: ../test/test_main.cpp
 test/CMakeFiles/test_kuiper.dir/test_main.cpp.o: test/CMakeFiles/test_kuiper.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xiaohou/Desktop/mykuiper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test_kuiper.dir/test_main.cpp.o"
-	cd /home/xiaohou/Desktop/mykuiper/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_kuiper.dir/test_main.cpp.o -MF CMakeFiles/test_kuiper.dir/test_main.cpp.o.d -o CMakeFiles/test_kuiper.dir/test_main.cpp.o -c /home/xiaohou/Desktop/mykuiper/test/test_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xiaohou/Desktop/myinfer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test_kuiper.dir/test_main.cpp.o"
+	cd /home/xiaohou/Desktop/myinfer/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_kuiper.dir/test_main.cpp.o -MF CMakeFiles/test_kuiper.dir/test_main.cpp.o.d -o CMakeFiles/test_kuiper.dir/test_main.cpp.o -c /home/xiaohou/Desktop/myinfer/test/test_main.cpp
 
 test/CMakeFiles/test_kuiper.dir/test_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_kuiper.dir/test_main.cpp.i"
-	cd /home/xiaohou/Desktop/mykuiper/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xiaohou/Desktop/mykuiper/test/test_main.cpp > CMakeFiles/test_kuiper.dir/test_main.cpp.i
+	cd /home/xiaohou/Desktop/myinfer/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xiaohou/Desktop/myinfer/test/test_main.cpp > CMakeFiles/test_kuiper.dir/test_main.cpp.i
 
 test/CMakeFiles/test_kuiper.dir/test_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_kuiper.dir/test_main.cpp.s"
-	cd /home/xiaohou/Desktop/mykuiper/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xiaohou/Desktop/mykuiper/test/test_main.cpp -o CMakeFiles/test_kuiper.dir/test_main.cpp.s
+	cd /home/xiaohou/Desktop/myinfer/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xiaohou/Desktop/myinfer/test/test_main.cpp -o CMakeFiles/test_kuiper.dir/test_main.cpp.s
 
 test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o: test/CMakeFiles/test_kuiper.dir/flags.make
 test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o: ../test/test_data/test_load_data.cpp
 test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o: test/CMakeFiles/test_kuiper.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xiaohou/Desktop/mykuiper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o"
-	cd /home/xiaohou/Desktop/mykuiper/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o -MF CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o.d -o CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o -c /home/xiaohou/Desktop/mykuiper/test/test_data/test_load_data.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xiaohou/Desktop/myinfer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o"
+	cd /home/xiaohou/Desktop/myinfer/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o -MF CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o.d -o CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o -c /home/xiaohou/Desktop/myinfer/test/test_data/test_load_data.cpp
 
 test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.i"
-	cd /home/xiaohou/Desktop/mykuiper/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xiaohou/Desktop/mykuiper/test/test_data/test_load_data.cpp > CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.i
+	cd /home/xiaohou/Desktop/myinfer/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xiaohou/Desktop/myinfer/test/test_data/test_load_data.cpp > CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.i
 
 test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.s"
-	cd /home/xiaohou/Desktop/mykuiper/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xiaohou/Desktop/mykuiper/test/test_data/test_load_data.cpp -o CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.s
+	cd /home/xiaohou/Desktop/myinfer/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xiaohou/Desktop/myinfer/test/test_data/test_load_data.cpp -o CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.s
 
 test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o: test/CMakeFiles/test_kuiper.dir/flags.make
 test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o: ../test/test_data/test_tensor.cpp
 test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o: test/CMakeFiles/test_kuiper.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xiaohou/Desktop/mykuiper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o"
-	cd /home/xiaohou/Desktop/mykuiper/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o -MF CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o.d -o CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o -c /home/xiaohou/Desktop/mykuiper/test/test_data/test_tensor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xiaohou/Desktop/myinfer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o"
+	cd /home/xiaohou/Desktop/myinfer/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o -MF CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o.d -o CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.o -c /home/xiaohou/Desktop/myinfer/test/test_data/test_tensor.cpp
 
 test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.i"
-	cd /home/xiaohou/Desktop/mykuiper/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xiaohou/Desktop/mykuiper/test/test_data/test_tensor.cpp > CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.i
+	cd /home/xiaohou/Desktop/myinfer/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xiaohou/Desktop/myinfer/test/test_data/test_tensor.cpp > CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.i
 
 test/CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.s"
-	cd /home/xiaohou/Desktop/mykuiper/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xiaohou/Desktop/mykuiper/test/test_data/test_tensor.cpp -o CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.s
+	cd /home/xiaohou/Desktop/myinfer/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xiaohou/Desktop/myinfer/test/test_data/test_tensor.cpp -o CMakeFiles/test_kuiper.dir/test_data/test_tensor.cpp.s
 
 # Object files for target test_kuiper
 test_kuiper_OBJECTS = \
@@ -136,18 +136,18 @@ test/test_kuiper: /usr/lib/x86_64-linux-gnu/libopenblas.so
 test/test_kuiper: /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so
 test/test_kuiper: /usr/lib/x86_64-linux-gnu/libpthread.a
 test/test_kuiper: test/CMakeFiles/test_kuiper.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xiaohou/Desktop/mykuiper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test_kuiper"
-	cd /home/xiaohou/Desktop/mykuiper/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_kuiper.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xiaohou/Desktop/myinfer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test_kuiper"
+	cd /home/xiaohou/Desktop/myinfer/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_kuiper.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/CMakeFiles/test_kuiper.dir/build: test/test_kuiper
 .PHONY : test/CMakeFiles/test_kuiper.dir/build
 
 test/CMakeFiles/test_kuiper.dir/clean:
-	cd /home/xiaohou/Desktop/mykuiper/build/test && $(CMAKE_COMMAND) -P CMakeFiles/test_kuiper.dir/cmake_clean.cmake
+	cd /home/xiaohou/Desktop/myinfer/build/test && $(CMAKE_COMMAND) -P CMakeFiles/test_kuiper.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/test_kuiper.dir/clean
 
 test/CMakeFiles/test_kuiper.dir/depend:
-	cd /home/xiaohou/Desktop/mykuiper/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xiaohou/Desktop/mykuiper /home/xiaohou/Desktop/mykuiper/test /home/xiaohou/Desktop/mykuiper/build /home/xiaohou/Desktop/mykuiper/build/test /home/xiaohou/Desktop/mykuiper/build/test/CMakeFiles/test_kuiper.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/xiaohou/Desktop/myinfer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xiaohou/Desktop/myinfer /home/xiaohou/Desktop/myinfer/test /home/xiaohou/Desktop/myinfer/build /home/xiaohou/Desktop/myinfer/build/test /home/xiaohou/Desktop/myinfer/build/test/CMakeFiles/test_kuiper.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/test_kuiper.dir/depend
 

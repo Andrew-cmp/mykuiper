@@ -255,7 +255,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/xiaohou/Desktop/mykuiper/build"
+			"value" : "/home/xiaohou/Desktop/myinfer/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/xiaohou/Desktop/mykuiper"
+			"value" : "/home/xiaohou/Desktop/myinfer"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1063,7 +1063,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "mykuiper"
+			"value" : "myinfer"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1670,7 +1670,7 @@
 			"value" : "/usr/local/lib/cmake/glog"
 		},
 		{
-			"name" : "mykuiper_BINARY_DIR",
+			"name" : "myinfer_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1679,10 +1679,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/xiaohou/Desktop/mykuiper/build"
+			"value" : "/home/xiaohou/Desktop/myinfer/build"
 		},
 		{
-			"name" : "mykuiper_IS_TOP_LEVEL",
+			"name" : "myinfer_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1694,7 +1694,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "mykuiper_SOURCE_DIR",
+			"name" : "myinfer_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1703,7 +1703,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/xiaohou/Desktop/mykuiper"
+			"value" : "/home/xiaohou/Desktop/myinfer"
 		}
 	],
 	"kind" : "cache",

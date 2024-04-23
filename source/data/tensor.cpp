@@ -1,7 +1,7 @@
 
 
 #include "data/tensor.hpp"
-namespace my_kuiper {
+namespace my_infer {
 
 template <typename T>
 Tensor<T>::Tensor(T* raw_ptr, uint32_t size) {

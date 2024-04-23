@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DGFLAGS_IS_A_DLL=0 -DGLOG_USE_GFLAGS -DGLOG_USE_GLOG_EXPORT
 
-CXX_INCLUDES = -I/home/xiaohou/Desktop/mykuiper/./include
+CXX_INCLUDES = -I/home/xiaohou/Desktop/myinfer/./include
 
 CXX_FLAGS =  -march=native -fopenmp -std=gnu++17
 

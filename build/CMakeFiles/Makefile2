@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xiaohou/Desktop/mykuiper
+CMAKE_SOURCE_DIR = /home/xiaohou/Desktop/myinfer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xiaohou/Desktop/mykuiper/build
+CMAKE_BINARY_DIR = /home/xiaohou/Desktop/myinfer/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -116,14 +116,14 @@ test/clean: test/CMakeFiles/test_kuiper.dir/clean
 CMakeFiles/kuiper.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xiaohou/Desktop/mykuiper/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target kuiper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xiaohou/Desktop/myinfer/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target kuiper"
 .PHONY : CMakeFiles/kuiper.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/kuiper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaohou/Desktop/mykuiper/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaohou/Desktop/myinfer/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/kuiper.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaohou/Desktop/mykuiper/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaohou/Desktop/myinfer/build/CMakeFiles 0
 .PHONY : CMakeFiles/kuiper.dir/rule
 
 # Convenience name for target.
@@ -142,14 +142,14 @@ CMakeFiles/kuiper.dir/clean:
 test/CMakeFiles/test_kuiper.dir/all: CMakeFiles/kuiper.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_kuiper.dir/build.make test/CMakeFiles/test_kuiper.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_kuiper.dir/build.make test/CMakeFiles/test_kuiper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xiaohou/Desktop/mykuiper/build/CMakeFiles --progress-num=7,8,9,10 "Built target test_kuiper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xiaohou/Desktop/myinfer/build/CMakeFiles --progress-num=7,8,9,10 "Built target test_kuiper"
 .PHONY : test/CMakeFiles/test_kuiper.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_kuiper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaohou/Desktop/mykuiper/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaohou/Desktop/myinfer/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_kuiper.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaohou/Desktop/mykuiper/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaohou/Desktop/myinfer/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_kuiper.dir/rule
 
 # Convenience name for target.

@@ -1,7 +1,7 @@
 CMakeFiles/kuiper.dir/source/data/load_data.cpp.o: \
- /home/xiaohou/Desktop/mykuiper/source/data/load_data.cpp \
+ /home/xiaohou/Desktop/myinfer/source/data/load_data.cpp \
  /usr/include/stdc-predef.h \
- /home/xiaohou/Desktop/mykuiper/./include/data/load_data.hpp \
+ /home/xiaohou/Desktop/myinfer/./include/data/load_data.hpp \
  /usr/local/include/glog/logging.h /usr/include/c++/11/atomic \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

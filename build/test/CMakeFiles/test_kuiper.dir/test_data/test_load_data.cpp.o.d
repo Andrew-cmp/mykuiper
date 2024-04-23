@@ -1,5 +1,5 @@
 test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o: \
- /home/xiaohou/Desktop/mykuiper/test/test_data/test_load_data.cpp \
+ /home/xiaohou/Desktop/myinfer/test/test_data/test_load_data.cpp \
  /usr/include/stdc-predef.h /usr/local/include/glog/logging.h \
  /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -280,7 +280,7 @@ test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o: \
  /usr/local/include/gtest/gtest-typed-test.h \
  /usr/local/include/gtest/gtest_pred_impl.h \
  /usr/local/include/gtest/gtest_prod.h \
- /home/xiaohou/Desktop/mykuiper/./include/data/load_data.hpp \
+ /home/xiaohou/Desktop/myinfer/./include/data/load_data.hpp \
  /usr/include/armadillo /usr/include/armadillo_bits/config.hpp \
  /usr/include/armadillo_bits/compiler_check.hpp \
  /usr/include/c++/11/climits \
@@ -957,4 +957,4 @@ test/CMakeFiles/test_kuiper.dir/test_data/test_load_data.cpp.o: \
  /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/iomanip \
  /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/codecvt \
  /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
- /home/xiaohou/Desktop/mykuiper/./include/tick.hpp
+ /home/xiaohou/Desktop/myinfer/./include/tick.hpp
