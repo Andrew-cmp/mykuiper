@@ -16,6 +16,11 @@
 },
 {
   "directory": "/home/xiaohou/Desktop/myinfer/build",
+  "command": "/usr/bin/c++ -DGFLAGS_IS_A_DLL=0 -DGLOG_USE_GFLAGS -DGLOG_USE_GLOG_EXPORT -Dkuiper_EXPORTS -I/home/xiaohou/Desktop/myinfer/./include  -march=native -fPIC -fopenmp -std=gnu++17 -o CMakeFiles/kuiper.dir/source/runtime/runtime_attr.cpp.o -c /home/xiaohou/Desktop/myinfer/source/runtime/runtime_attr.cpp",
+  "file": "/home/xiaohou/Desktop/myinfer/source/runtime/runtime_attr.cpp"
+},
+{
+  "directory": "/home/xiaohou/Desktop/myinfer/build",
   "command": "/usr/bin/c++ -DGFLAGS_IS_A_DLL=0 -DGLOG_USE_GFLAGS -DGLOG_USE_GLOG_EXPORT -Dkuiper_EXPORTS -I/home/xiaohou/Desktop/myinfer/./include  -march=native -fPIC -fopenmp -std=gnu++17 -o CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o -c /home/xiaohou/Desktop/myinfer/source/runtime/pnnx/ir.cpp",
   "file": "/home/xiaohou/Desktop/myinfer/source/runtime/pnnx/ir.cpp"
 },

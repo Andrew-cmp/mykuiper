@@ -272,6 +272,30 @@ source/runtime/pnnx/store_zip.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.s
 .PHONY : source/runtime/pnnx/store_zip.cpp.s
 
+source/runtime/runtime_attr.o: source/runtime/runtime_attr.cpp.o
+.PHONY : source/runtime/runtime_attr.o
+
+# target to build an object file
+source/runtime/runtime_attr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/runtime_attr.cpp.o
+.PHONY : source/runtime/runtime_attr.cpp.o
+
+source/runtime/runtime_attr.i: source/runtime/runtime_attr.cpp.i
+.PHONY : source/runtime/runtime_attr.i
+
+# target to preprocess a source file
+source/runtime/runtime_attr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/runtime_attr.cpp.i
+.PHONY : source/runtime/runtime_attr.cpp.i
+
+source/runtime/runtime_attr.s: source/runtime/runtime_attr.cpp.s
+.PHONY : source/runtime/runtime_attr.s
+
+# target to generate assembly for a file
+source/runtime/runtime_attr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/runtime_attr.cpp.s
+.PHONY : source/runtime/runtime_attr.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -298,6 +322,9 @@ help:
 	@echo "... source/runtime/pnnx/store_zip.o"
 	@echo "... source/runtime/pnnx/store_zip.i"
 	@echo "... source/runtime/pnnx/store_zip.s"
+	@echo "... source/runtime/runtime_attr.o"
+	@echo "... source/runtime/runtime_attr.i"
+	@echo "... source/runtime/runtime_attr.s"
 .PHONY : help
 
 

@@ -1,19 +1,19 @@
 Determining if the function sgemm_ exists failed with the following output:
 Change Dir: /home/xiaohou/Desktop/myinfer/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8e997/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8e997.dir/build.make CMakeFiles/cmTC_8e997.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_56f1b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_56f1b.dir/build.make CMakeFiles/cmTC_56f1b.dir/build
 gmake[1]: 进入目录“/home/xiaohou/Desktop/myinfer/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_8e997.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_8e997.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
-Linking C executable cmTC_8e997
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e997.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_8e997.dir/CheckFunctionExists.c.o -o cmTC_8e997 
-/usr/bin/ld: CMakeFiles/cmTC_8e997.dir/CheckFunctionExists.c.o: in function `main':
+Building C object CMakeFiles/cmTC_56f1b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_56f1b.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_56f1b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56f1b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_56f1b.dir/CheckFunctionExists.c.o -o cmTC_56f1b 
+/usr/bin/ld: CMakeFiles/cmTC_56f1b.dir/CheckFunctionExists.c.o: in function `main':
 CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_8e997.dir/build.make:99：cmTC_8e997] 错误 1
+gmake[1]: *** [CMakeFiles/cmTC_56f1b.dir/build.make:99：cmTC_56f1b] 错误 1
 gmake[1]: 离开目录“/home/xiaohou/Desktop/myinfer/build/CMakeFiles/CMakeTmp”
-gmake: *** [Makefile:127：cmTC_8e997/fast] 错误 2
+gmake: *** [Makefile:127：cmTC_56f1b/fast] 错误 2
 
 
 

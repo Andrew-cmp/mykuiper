@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/xiaohou/Desktop/myinfer/source/data/tensor_utils.cpp" "CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o" "gcc" "CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o.d"
   "/home/xiaohou/Desktop/myinfer/source/runtime/pnnx/ir.cpp" "CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o" "gcc" "CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o.d"
   "/home/xiaohou/Desktop/myinfer/source/runtime/pnnx/store_zip.cpp" "CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o" "gcc" "CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o.d"
+  "/home/xiaohou/Desktop/myinfer/source/runtime/runtime_attr.cpp" "CMakeFiles/kuiper.dir/source/runtime/runtime_attr.cpp.o" "gcc" "CMakeFiles/kuiper.dir/source/runtime/runtime_attr.cpp.o.d"
   )
 
 # Targets to which this target links.
