@@ -11,9 +11,13 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/xiaohou/Desktop/myinfer/source/data/load_data.cpp" "CMakeFiles/kuiper.dir/source/data/load_data.cpp.o" "gcc" "CMakeFiles/kuiper.dir/source/data/load_data.cpp.o.d"
   "/home/xiaohou/Desktop/myinfer/source/data/tensor.cpp" "CMakeFiles/kuiper.dir/source/data/tensor.cpp.o" "gcc" "CMakeFiles/kuiper.dir/source/data/tensor.cpp.o.d"
   "/home/xiaohou/Desktop/myinfer/source/data/tensor_utils.cpp" "CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o" "gcc" "CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o.d"
+  "/home/xiaohou/Desktop/myinfer/source/layer/abstract/lay_factor.cpp" "CMakeFiles/kuiper.dir/source/layer/abstract/lay_factor.cpp.o" "gcc" "CMakeFiles/kuiper.dir/source/layer/abstract/lay_factor.cpp.o.d"
+  "/home/xiaohou/Desktop/myinfer/source/layer/abstract/layer.cpp" "CMakeFiles/kuiper.dir/source/layer/abstract/layer.cpp.o" "gcc" "CMakeFiles/kuiper.dir/source/layer/abstract/layer.cpp.o.d"
+  "/home/xiaohou/Desktop/myinfer/source/layer/abstract/param_layer.cpp" "CMakeFiles/kuiper.dir/source/layer/abstract/param_layer.cpp.o" "gcc" "CMakeFiles/kuiper.dir/source/layer/abstract/param_layer.cpp.o.d"
   "/home/xiaohou/Desktop/myinfer/source/runtime/pnnx/ir.cpp" "CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o" "gcc" "CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o.d"
   "/home/xiaohou/Desktop/myinfer/source/runtime/pnnx/store_zip.cpp" "CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o" "gcc" "CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o.d"
-  "/home/xiaohou/Desktop/myinfer/source/runtime/runtime_attr.cpp" "CMakeFiles/kuiper.dir/source/runtime/runtime_attr.cpp.o" "gcc" "CMakeFiles/kuiper.dir/source/runtime/runtime_attr.cpp.o.d"
+  "/home/xiaohou/Desktop/myinfer/source/runtime/runtime_ir.cpp" "CMakeFiles/kuiper.dir/source/runtime/runtime_ir.cpp.o" "gcc" "CMakeFiles/kuiper.dir/source/runtime/runtime_ir.cpp.o.d"
+  "/home/xiaohou/Desktop/myinfer/source/runtime/runtime_op.cpp" "CMakeFiles/kuiper.dir/source/runtime/runtime_op.cpp.o" "gcc" "CMakeFiles/kuiper.dir/source/runtime/runtime_op.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -7,12 +7,20 @@ file(REMOVE_RECURSE
   "CMakeFiles/kuiper.dir/source/data/tensor.cpp.o.d"
   "CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o"
   "CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.o.d"
+  "CMakeFiles/kuiper.dir/source/layer/abstract/lay_factor.cpp.o"
+  "CMakeFiles/kuiper.dir/source/layer/abstract/lay_factor.cpp.o.d"
+  "CMakeFiles/kuiper.dir/source/layer/abstract/layer.cpp.o"
+  "CMakeFiles/kuiper.dir/source/layer/abstract/layer.cpp.o.d"
+  "CMakeFiles/kuiper.dir/source/layer/abstract/param_layer.cpp.o"
+  "CMakeFiles/kuiper.dir/source/layer/abstract/param_layer.cpp.o.d"
   "CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o"
   "CMakeFiles/kuiper.dir/source/runtime/pnnx/ir.cpp.o.d"
   "CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o"
   "CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o.d"
-  "CMakeFiles/kuiper.dir/source/runtime/runtime_attr.cpp.o"
-  "CMakeFiles/kuiper.dir/source/runtime/runtime_attr.cpp.o.d"
+  "CMakeFiles/kuiper.dir/source/runtime/runtime_ir.cpp.o"
+  "CMakeFiles/kuiper.dir/source/runtime/runtime_ir.cpp.o.d"
+  "CMakeFiles/kuiper.dir/source/runtime/runtime_op.cpp.o"
+  "CMakeFiles/kuiper.dir/source/runtime/runtime_op.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

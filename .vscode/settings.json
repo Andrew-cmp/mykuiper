@@ -66,6 +66,9 @@
         "span": "cpp",
         "variant": "cpp",
         "codecvt": "cpp",
-        "iomanip": "cpp"
-    }
+        "iomanip": "cpp",
+        "shared_mutex": "cpp",
+        "cfenv": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

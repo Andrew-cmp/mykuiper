@@ -16,8 +16,13 @@
 },
 {
   "directory": "/home/xiaohou/Desktop/myinfer/build",
-  "command": "/usr/bin/c++ -DGFLAGS_IS_A_DLL=0 -DGLOG_USE_GFLAGS -DGLOG_USE_GLOG_EXPORT -Dkuiper_EXPORTS -I/home/xiaohou/Desktop/myinfer/./include  -march=native -fPIC -fopenmp -std=gnu++17 -o CMakeFiles/kuiper.dir/source/runtime/runtime_attr.cpp.o -c /home/xiaohou/Desktop/myinfer/source/runtime/runtime_attr.cpp",
-  "file": "/home/xiaohou/Desktop/myinfer/source/runtime/runtime_attr.cpp"
+  "command": "/usr/bin/c++ -DGFLAGS_IS_A_DLL=0 -DGLOG_USE_GFLAGS -DGLOG_USE_GLOG_EXPORT -Dkuiper_EXPORTS -I/home/xiaohou/Desktop/myinfer/./include  -march=native -fPIC -fopenmp -std=gnu++17 -o CMakeFiles/kuiper.dir/source/runtime/runtime_ir.cpp.o -c /home/xiaohou/Desktop/myinfer/source/runtime/runtime_ir.cpp",
+  "file": "/home/xiaohou/Desktop/myinfer/source/runtime/runtime_ir.cpp"
+},
+{
+  "directory": "/home/xiaohou/Desktop/myinfer/build",
+  "command": "/usr/bin/c++ -DGFLAGS_IS_A_DLL=0 -DGLOG_USE_GFLAGS -DGLOG_USE_GLOG_EXPORT -Dkuiper_EXPORTS -I/home/xiaohou/Desktop/myinfer/./include  -march=native -fPIC -fopenmp -std=gnu++17 -o CMakeFiles/kuiper.dir/source/runtime/runtime_op.cpp.o -c /home/xiaohou/Desktop/myinfer/source/runtime/runtime_op.cpp",
+  "file": "/home/xiaohou/Desktop/myinfer/source/runtime/runtime_op.cpp"
 },
 {
   "directory": "/home/xiaohou/Desktop/myinfer/build",
@@ -28,6 +33,21 @@
   "directory": "/home/xiaohou/Desktop/myinfer/build",
   "command": "/usr/bin/c++ -DGFLAGS_IS_A_DLL=0 -DGLOG_USE_GFLAGS -DGLOG_USE_GLOG_EXPORT -Dkuiper_EXPORTS -I/home/xiaohou/Desktop/myinfer/./include  -march=native -fPIC -fopenmp -std=gnu++17 -o CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.o -c /home/xiaohou/Desktop/myinfer/source/runtime/pnnx/store_zip.cpp",
   "file": "/home/xiaohou/Desktop/myinfer/source/runtime/pnnx/store_zip.cpp"
+},
+{
+  "directory": "/home/xiaohou/Desktop/myinfer/build",
+  "command": "/usr/bin/c++ -DGFLAGS_IS_A_DLL=0 -DGLOG_USE_GFLAGS -DGLOG_USE_GLOG_EXPORT -Dkuiper_EXPORTS -I/home/xiaohou/Desktop/myinfer/./include  -march=native -fPIC -fopenmp -std=gnu++17 -o CMakeFiles/kuiper.dir/source/layer/abstract/lay_factor.cpp.o -c /home/xiaohou/Desktop/myinfer/source/layer/abstract/lay_factor.cpp",
+  "file": "/home/xiaohou/Desktop/myinfer/source/layer/abstract/lay_factor.cpp"
+},
+{
+  "directory": "/home/xiaohou/Desktop/myinfer/build",
+  "command": "/usr/bin/c++ -DGFLAGS_IS_A_DLL=0 -DGLOG_USE_GFLAGS -DGLOG_USE_GLOG_EXPORT -Dkuiper_EXPORTS -I/home/xiaohou/Desktop/myinfer/./include  -march=native -fPIC -fopenmp -std=gnu++17 -o CMakeFiles/kuiper.dir/source/layer/abstract/layer.cpp.o -c /home/xiaohou/Desktop/myinfer/source/layer/abstract/layer.cpp",
+  "file": "/home/xiaohou/Desktop/myinfer/source/layer/abstract/layer.cpp"
+},
+{
+  "directory": "/home/xiaohou/Desktop/myinfer/build",
+  "command": "/usr/bin/c++ -DGFLAGS_IS_A_DLL=0 -DGLOG_USE_GFLAGS -DGLOG_USE_GLOG_EXPORT -Dkuiper_EXPORTS -I/home/xiaohou/Desktop/myinfer/./include  -march=native -fPIC -fopenmp -std=gnu++17 -o CMakeFiles/kuiper.dir/source/layer/abstract/param_layer.cpp.o -c /home/xiaohou/Desktop/myinfer/source/layer/abstract/param_layer.cpp",
+  "file": "/home/xiaohou/Desktop/myinfer/source/layer/abstract/param_layer.cpp"
 },
 {
   "directory": "/home/xiaohou/Desktop/myinfer/build/test",

@@ -24,4 +24,4 @@
 #include "data/tensor.hpp"
 #include "data/tensor_util.hpp"
 
-namespace my_infer {}  // namespace kuiper_infer
+namespace my_infer {}  // namespace my_infer

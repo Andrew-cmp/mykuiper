@@ -224,6 +224,78 @@ source/data/tensor_utils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/data/tensor_utils.cpp.s
 .PHONY : source/data/tensor_utils.cpp.s
 
+source/layer/abstract/lay_factor.o: source/layer/abstract/lay_factor.cpp.o
+.PHONY : source/layer/abstract/lay_factor.o
+
+# target to build an object file
+source/layer/abstract/lay_factor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/layer/abstract/lay_factor.cpp.o
+.PHONY : source/layer/abstract/lay_factor.cpp.o
+
+source/layer/abstract/lay_factor.i: source/layer/abstract/lay_factor.cpp.i
+.PHONY : source/layer/abstract/lay_factor.i
+
+# target to preprocess a source file
+source/layer/abstract/lay_factor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/layer/abstract/lay_factor.cpp.i
+.PHONY : source/layer/abstract/lay_factor.cpp.i
+
+source/layer/abstract/lay_factor.s: source/layer/abstract/lay_factor.cpp.s
+.PHONY : source/layer/abstract/lay_factor.s
+
+# target to generate assembly for a file
+source/layer/abstract/lay_factor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/layer/abstract/lay_factor.cpp.s
+.PHONY : source/layer/abstract/lay_factor.cpp.s
+
+source/layer/abstract/layer.o: source/layer/abstract/layer.cpp.o
+.PHONY : source/layer/abstract/layer.o
+
+# target to build an object file
+source/layer/abstract/layer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/layer/abstract/layer.cpp.o
+.PHONY : source/layer/abstract/layer.cpp.o
+
+source/layer/abstract/layer.i: source/layer/abstract/layer.cpp.i
+.PHONY : source/layer/abstract/layer.i
+
+# target to preprocess a source file
+source/layer/abstract/layer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/layer/abstract/layer.cpp.i
+.PHONY : source/layer/abstract/layer.cpp.i
+
+source/layer/abstract/layer.s: source/layer/abstract/layer.cpp.s
+.PHONY : source/layer/abstract/layer.s
+
+# target to generate assembly for a file
+source/layer/abstract/layer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/layer/abstract/layer.cpp.s
+.PHONY : source/layer/abstract/layer.cpp.s
+
+source/layer/abstract/param_layer.o: source/layer/abstract/param_layer.cpp.o
+.PHONY : source/layer/abstract/param_layer.o
+
+# target to build an object file
+source/layer/abstract/param_layer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/layer/abstract/param_layer.cpp.o
+.PHONY : source/layer/abstract/param_layer.cpp.o
+
+source/layer/abstract/param_layer.i: source/layer/abstract/param_layer.cpp.i
+.PHONY : source/layer/abstract/param_layer.i
+
+# target to preprocess a source file
+source/layer/abstract/param_layer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/layer/abstract/param_layer.cpp.i
+.PHONY : source/layer/abstract/param_layer.cpp.i
+
+source/layer/abstract/param_layer.s: source/layer/abstract/param_layer.cpp.s
+.PHONY : source/layer/abstract/param_layer.s
+
+# target to generate assembly for a file
+source/layer/abstract/param_layer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/layer/abstract/param_layer.cpp.s
+.PHONY : source/layer/abstract/param_layer.cpp.s
+
 source/runtime/pnnx/ir.o: source/runtime/pnnx/ir.cpp.o
 .PHONY : source/runtime/pnnx/ir.o
 
@@ -272,29 +344,53 @@ source/runtime/pnnx/store_zip.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/pnnx/store_zip.cpp.s
 .PHONY : source/runtime/pnnx/store_zip.cpp.s
 
-source/runtime/runtime_attr.o: source/runtime/runtime_attr.cpp.o
-.PHONY : source/runtime/runtime_attr.o
+source/runtime/runtime_ir.o: source/runtime/runtime_ir.cpp.o
+.PHONY : source/runtime/runtime_ir.o
 
 # target to build an object file
-source/runtime/runtime_attr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/runtime_attr.cpp.o
-.PHONY : source/runtime/runtime_attr.cpp.o
+source/runtime/runtime_ir.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/runtime_ir.cpp.o
+.PHONY : source/runtime/runtime_ir.cpp.o
 
-source/runtime/runtime_attr.i: source/runtime/runtime_attr.cpp.i
-.PHONY : source/runtime/runtime_attr.i
+source/runtime/runtime_ir.i: source/runtime/runtime_ir.cpp.i
+.PHONY : source/runtime/runtime_ir.i
 
 # target to preprocess a source file
-source/runtime/runtime_attr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/runtime_attr.cpp.i
-.PHONY : source/runtime/runtime_attr.cpp.i
+source/runtime/runtime_ir.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/runtime_ir.cpp.i
+.PHONY : source/runtime/runtime_ir.cpp.i
 
-source/runtime/runtime_attr.s: source/runtime/runtime_attr.cpp.s
-.PHONY : source/runtime/runtime_attr.s
+source/runtime/runtime_ir.s: source/runtime/runtime_ir.cpp.s
+.PHONY : source/runtime/runtime_ir.s
 
 # target to generate assembly for a file
-source/runtime/runtime_attr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/runtime_attr.cpp.s
-.PHONY : source/runtime/runtime_attr.cpp.s
+source/runtime/runtime_ir.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/runtime_ir.cpp.s
+.PHONY : source/runtime/runtime_ir.cpp.s
+
+source/runtime/runtime_op.o: source/runtime/runtime_op.cpp.o
+.PHONY : source/runtime/runtime_op.o
+
+# target to build an object file
+source/runtime/runtime_op.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/runtime_op.cpp.o
+.PHONY : source/runtime/runtime_op.cpp.o
+
+source/runtime/runtime_op.i: source/runtime/runtime_op.cpp.i
+.PHONY : source/runtime/runtime_op.i
+
+# target to preprocess a source file
+source/runtime/runtime_op.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/runtime_op.cpp.i
+.PHONY : source/runtime/runtime_op.cpp.i
+
+source/runtime/runtime_op.s: source/runtime/runtime_op.cpp.s
+.PHONY : source/runtime/runtime_op.s
+
+# target to generate assembly for a file
+source/runtime/runtime_op.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuiper.dir/build.make CMakeFiles/kuiper.dir/source/runtime/runtime_op.cpp.s
+.PHONY : source/runtime/runtime_op.cpp.s
 
 # Help Target
 help:
@@ -316,15 +412,27 @@ help:
 	@echo "... source/data/tensor_utils.o"
 	@echo "... source/data/tensor_utils.i"
 	@echo "... source/data/tensor_utils.s"
+	@echo "... source/layer/abstract/lay_factor.o"
+	@echo "... source/layer/abstract/lay_factor.i"
+	@echo "... source/layer/abstract/lay_factor.s"
+	@echo "... source/layer/abstract/layer.o"
+	@echo "... source/layer/abstract/layer.i"
+	@echo "... source/layer/abstract/layer.s"
+	@echo "... source/layer/abstract/param_layer.o"
+	@echo "... source/layer/abstract/param_layer.i"
+	@echo "... source/layer/abstract/param_layer.s"
 	@echo "... source/runtime/pnnx/ir.o"
 	@echo "... source/runtime/pnnx/ir.i"
 	@echo "... source/runtime/pnnx/ir.s"
 	@echo "... source/runtime/pnnx/store_zip.o"
 	@echo "... source/runtime/pnnx/store_zip.i"
 	@echo "... source/runtime/pnnx/store_zip.s"
-	@echo "... source/runtime/runtime_attr.o"
-	@echo "... source/runtime/runtime_attr.i"
-	@echo "... source/runtime/runtime_attr.s"
+	@echo "... source/runtime/runtime_ir.o"
+	@echo "... source/runtime/runtime_ir.i"
+	@echo "... source/runtime/runtime_ir.s"
+	@echo "... source/runtime/runtime_op.o"
+	@echo "... source/runtime/runtime_op.i"
+	@echo "... source/runtime/runtime_op.s"
 .PHONY : help
 
 
