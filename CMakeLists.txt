@@ -48,12 +48,11 @@ target_include_directories(kuiper PUBLIC ${Armadillo_INCLUDE_DIR})
 # target_include_directories(main PUBLIC ${GTest_INCLUDE_DIR})
 # target_include_directories(main PUBLIC ${Armadillo_INCLUDE_DIR})
 
-# # mathfun library defines，这是干嘛的
+# # mathfun library defines，加入sse
 # add_compile_definitions(SSE_MATHFUN_WITH_CODE USE_SSE_AUTO)
 
 
-# # 本项目的开发者请使用set(DEVELOPMENT ON)或者在cmake中添加-DDEVELOPMENT=ON将选项打开
-# # 如果是，打开了test和bench功能，增加了bench和test的directory。
+# 打开了test和bench功能，增加了bench和test的directory。
 # option(DEVELOPMENT ON)
 # if (${DEVELOPMENT})
 #     message(STATUS "DEVELOPMENT MODE ON")

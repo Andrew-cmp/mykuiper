@@ -2,14 +2,16 @@
 #include "data/tensor_util.hpp"
 namespace my_infer
 {
-    ///这个地方好像是做每个operator input_operand的类型检查
+    ///这个地方是做每个operator input_operand的类型检查
 void RuntimeOperatorUtils<float>::InitOperatorInput(
     const std::vector<std::shared_ptr<RuntimeOperator>>& operators){
-        if(!operators.empty()){
+        if(operators.empty()){
             LOG(ERROR)<<"Operators for init input shapes is empty";
+            return ;
         }
         for(const auto &op:operators){
-            if(op->input_operands_seq.empty()){
+            //写错了
+            if(op->input_operands.empty()){
                 continue;
             }
             else{
@@ -41,7 +43,6 @@ void RuntimeOperatorUtils<float>::InitOperatorInput(
 static void CheckAndReshapeTensor(sftensor& output_tensor,
                                   const std::vector<int32_t>& operand_shapes){
     const std::vector<uint32_t>& tensor_shapes = output_tensor->shapes();
-    CHECK(tensor_shapes.size() == operand_shapes.size()-1);
     switch (operand_shapes.size()){
         case 4:{
             if(tensor_shapes[0] != operand_shapes[1] || tensor_shapes[1] != operand_shapes[2] 
@@ -51,14 +52,18 @@ static void CheckAndReshapeTensor(sftensor& output_tensor,
              }
             break;}
         case 3:{
-            if(tensor_shapes[0] != operand_shapes[1] || tensor_shapes[1] != operand_shapes[2]){
+            //error if(tensor_shapes[0] != operand_shapes[1] || tensor_shapes[1] != operand_shapes[2]){
+            if (tensor_shapes[0] != 1 || tensor_shapes[1] != operand_shapes[1] ||
+            tensor_shapes[2] != operand_shapes[2]) {
+            
                 output_tensor->Reshape({(uint32_t)operand_shapes[1],(uint32_t)operand_shapes[2]});
              }
             break;}
         case 2:{
-            if(tensor_shapes[0] != operand_shapes[1]){
-                output_tensor->Reshape({(uint32_t)operand_shapes[1]});
-             }
+            //error if(tensor_shapes[0] != operand_shapes[1]){
+            if (tensor_shapes[0] != 1 || tensor_shapes[1] != operand_shapes[1] || tensor_shapes[2] != 1) {
+            output_tensor->Reshape({(uint32_t)operand_shapes[1]});
+            }
             break;}
         default:{
             LOG(FATAL) << "Unknown output operand shape length: " << operand_shapes.size();
@@ -173,16 +178,16 @@ void RuntimeOperatorUtils<float>::InitOperatorOutput(
                 }
                 runtime_operand = std::make_shared<RuntimeOperand>(pnnx_operand->name+"_output",operand_shapes,
                                                             out_operand_datas,RuntimeDataType::kTypeFloat32);
-            }//如果上面找到了，那下面就做一下类型检查
-            else{
-                ///runtime_operand->datas只是一个存了各个batch数据 shared_ptr的vector。
-                CHECK(runtime_operand->datas.size()==batch);
-                CHECK(runtime_operand->type == RuntimeDataType::kTypeFloat32);
-                CHECK(runtime_operand->shapes == operand_shapes);
-                for(uint32_t b = 0;b< batch ;++b){
-                    sftensor output_tensor = runtime_operand->datas[b];
-                    CheckAndReshapeTensor(output_tensor,operand_shapes);
-                }
+            }//如果上面找到了，那下面就做一下类型检查   
+        }
+        else{
+            ///runtime_operand->datas只是一个存了各个batch数据 shared_ptr的vector。
+            CHECK(runtime_operand->datas.size()==batch);
+            CHECK(runtime_operand->type == RuntimeDataType::kTypeFloat32);
+            CHECK(runtime_operand->shapes == operand_shapes);
+            for(uint32_t b = 0;b< batch ;++b){
+                sftensor output_tensor = runtime_operand->datas[b];
+                CheckAndReshapeTensor(output_tensor,operand_shapes);
             }
         }
     }

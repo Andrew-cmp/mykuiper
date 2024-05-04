@@ -162,14 +162,14 @@ const arma::Cube<T>& Tensor<T>::data() const
     return this->data_;
 }
 template <typename T>
-arma::Mat<T>& Tensor<T>::get_slice(uint32_t channel) 
+arma::Mat<T>& Tensor<T>::slice(uint32_t channel) 
 {
     CHECK_LT(channel, this->channels());
     return this->data_.slice(channel);
 }
 
 template <typename T>
-const arma::Mat<T>& Tensor<T>::get_slice(uint32_t channel) const
+const arma::Mat<T>& Tensor<T>::slice(uint32_t channel) const
 {
     CHECK_LT(channel, this->channels());
     return this->data_.slice(channel);

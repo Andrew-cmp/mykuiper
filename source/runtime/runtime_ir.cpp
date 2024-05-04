@@ -27,7 +27,7 @@ bool RuntimeGraph::Init(){
     }
     this->graph_ = std::make_unique<pnnx::Graph>();
 
-    int32_t load_pnnx_result = this->graph_->load(this->bin_path_,this->param_path_);
+    int32_t load_pnnx_result = this->graph_->load(this->param_path_,this->bin_path_);
 
     if(load_pnnx_result != 0){
         LOG(ERROR) <<"incorrect param path or bin path:"<<param_path_ <<" "<<bin_path_;

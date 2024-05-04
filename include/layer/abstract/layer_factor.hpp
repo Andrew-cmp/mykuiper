@@ -15,21 +15,21 @@ class LayerRegisterer{
     public:
         friend class LayerRegistererWrapper;
         friend class RegistryGarbageCollector;
-         /**
-         * 向注册表注册算⼦
-         * layer_type 算⼦的类型
-         * creator 需要注册算⼦的注册表
-         */
+
+         //向注册表注册算⼦，也就是在register_ map里增加layer_type,creator的键值对。
+         //layer_type 算⼦的类型
+         //creator 需要注册算⼦的实例化函数
         static void RegisterCreator(const std::string& layer_type,const Creator& creator);
         static std::shared_ptr<Layer<float>> CreateLayer(const std::shared_ptr<RuntimeOperator>& op);
+
         //得到全局注册表，作为单例模式中的访问接口，如果没有即创建
+        //相当于是LayerRegisterer的constructor，因为类成员是静态的，所以"constructor"也得是静态的
         static CreateRegistry* Registry();
 
         static std::vector<std::string> layer_types();
 };
 //这是为了更好的注册算子，在注册不同类型的算子的时候，不用再用RegisterCreator了
 //而是直接初始化这个类，就调用了RegisterCreator了。
-
 class LayerRegistererWrapper{
     public:
         explicit LayerRegistererWrapper(const LayerRegisterer::Creator& creator,
@@ -60,11 +60,6 @@ class RegistryGarbageCollector{
         RegistryGarbageCollector() = default;
         RegistryGarbageCollector(const RegistryGarbageCollector&) = default;
 };
-
-
-
-
-
 }
 
 

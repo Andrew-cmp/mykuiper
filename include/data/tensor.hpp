@@ -54,8 +54,8 @@ class Tensor{
 
         //不加这两个引用还会出问题
 
-        arma::Mat<T>& get_slice(uint32_t channel);
-        const  arma::Mat<T>& get_slice(uint32_t channel)const;
+        arma::Mat<T>& slice(uint32_t channel);
+        const  arma::Mat<T>& slice(uint32_t channel)const;
 
 
 

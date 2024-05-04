@@ -283,8 +283,8 @@ std::shared_ptr<Tensor<T>> TensorPadding(const std::shared_ptr<Tensor<T>>& tenso
 
   const uint32_t channels = tensor->channels();
   for (uint32_t channel = 0; channel < channels; ++channel) {
-    const arma::Mat<T>& in_channel = tensor->get_slice(channel);
-    arma::Mat<T>& output_channel = output->get_slice(channel);
+    const arma::Mat<T>& in_channel = tensor->slice(channel);
+    arma::Mat<T>& output_channel = output->slice(channel);
     const uint32_t in_channel_width = in_channel.n_cols;
     const uint32_t in_channel_height = in_channel.n_rows;
 

@@ -16,9 +16,9 @@ void LayerRegisterer::RegisterCreator(const std::string& layer_type,const Creato
 }
 
 std::shared_ptr<Layer<float>> LayerRegisterer::CreateLayer(const std::shared_ptr<RuntimeOperator>& op){
-    LayerRegisterer::CreateRegistry* registry = Registry();
+    CreateRegistry* registry = Registry();
     const std::string& layer_type = op->type;
-    LOG_IF(FATAL,registry->count(layer_type)<0) <<"Can noe find the layer type:" << layer_type;
+    LOG_IF(FATAL,registry->count(layer_type)<=0) <<"Can noe find the layer type:" << layer_type;
     const auto& creator = registry->find(layer_type)->second;
     LOG_IF(FATAL,!creator)<<"Layer creator is empty";
 
@@ -30,12 +30,12 @@ std::shared_ptr<Layer<float>> LayerRegisterer::CreateLayer(const std::shared_ptr
     return layer;
 
 }
-LayerRegisterer::CreateRegistry* LayerRegisterer::Registry(){
-    if(registry_ == nullptr){
+LayerRegisterer::CreateRegistry* LayerRegisterer::Registry() {
+    if (registry_ == nullptr) {
         registry_ = new CreateRegistry();
         static RegistryGarbageCollector c;
     }
-    CHECK(registry_ == nullptr)<<"global layer register init failed";
+    CHECK(registry_ != nullptr) << "Global layer register init failed!";
     return registry_;
 }
 //笨拙
@@ -48,8 +48,5 @@ std::vector<std::string> LayerRegisterer::layer_types(){
     std::vector<std::string> layer_types(layer_types_unique.begin(), layer_types_unique.end());
     return layer_types;
 }
-
-
-
 }
 

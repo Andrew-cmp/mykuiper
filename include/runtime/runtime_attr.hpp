@@ -12,6 +12,7 @@ struct RuntimeAttribute
     explicit RuntimeAttribute(std::vector<int32_t> shape, RuntimeDataType type,
                             std::vector<char> weight_data):
                             shape(std::move(shape)),type(type),weight_data(std::move(weight_data)){}
+    RuntimeAttribute() = default;
     /// 为什么是char?
     std::vector<char> weight_data;
     std::vector<int32_t> shape;

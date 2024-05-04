@@ -401,7 +401,7 @@ TEST(test_tensor, tensor_broadcast2) {
 
   for (uint32_t i = 0; i < tensor21->channels(); ++i) {
     float c = tensor2->at(i, 0, 0);
-    const auto& in_channel = tensor21->get_slice(i);
+    const auto& in_channel = tensor21->slice(i);
     for (uint32_t j = 0; j < in_channel.size(); ++j) {
       ASSERT_EQ(in_channel.at(j), c);
     }
@@ -710,7 +710,7 @@ TEST(test_tensor, review1) {
   tensor.Fill(values);
 
   tensor.Reshape({4, 3, 5}, true);
-  auto data = tensor.get_slice(0);
+  auto data = tensor.slice(0);
   int index = 0;
   for (int i = 0; i < 3; ++i) {
     for (int j = 0; j < 5; ++j) {
@@ -718,7 +718,7 @@ TEST(test_tensor, review1) {
       index += 1;
     }
   }
-  data = tensor.get_slice(1);
+  data = tensor.slice(1);
   index = 0;
   for (int i = 0; i < 3; ++i) {
     for (int j = 0; j < 5; ++j) {
@@ -727,7 +727,7 @@ TEST(test_tensor, review1) {
     }
   }
   index = 0;
-  data = tensor.get_slice(2);
+  data = tensor.slice(2);
 
   for (int i = 0; i < 3; ++i) {
     for (int j = 0; j < 5; ++j) {
@@ -737,7 +737,7 @@ TEST(test_tensor, review1) {
   }
 
   index = 0;
-  data = tensor.get_slice(3);
+  data = tensor.slice(3);
 
   for (int i = 0; i < 3; ++i) {
     for (int j = 0; j < 5; ++j) {
@@ -757,8 +757,8 @@ TEST(test_tensor, review2) {
       "1,2,3,4;"
       "5,6,7,8";
   sftensor data = TensorCreate<float>(2, 2, 4);
-  data->get_slice(0) = f1;
-  data->get_slice(1) = f2;
+  data->slice(0) = f1;
+  data->slice(1) = f2;
   data->Reshape({16}, true);
   for (uint32_t i = 0; i < 8; ++i) {
     ASSERT_EQ(data->index(i), i + 1);
@@ -776,10 +776,10 @@ TEST(test_tensor, review3) {
       "5,6,7,8";
 
   sftensor data = TensorCreate<float>(1, 2, 4);
-  data->get_slice(0) = f1;
+  data->slice(0) = f1;
   data->Reshape({4, 2}, true);
 
-  arma::fmat data2 = data->get_slice(0);
+  arma::fmat data2 = data->slice(0);
   ASSERT_EQ(data2.n_rows, 4);
   ASSERT_EQ(data2.n_cols, 2);
   uint32_t index = 1;
@@ -802,11 +802,11 @@ TEST(test_tensor, review4) {
       "13,14,15,16";
 
   sftensor data = TensorCreate<float>(2, 2, 4);
-  data->get_slice(0) = f1;
-  data->get_slice(1) = f2;
+  data->slice(0) = f1;
+  data->slice(1) = f2;
   data->Reshape({4, 2, 2}, true);
   for (uint32_t c = 0; c < data->channels(); ++c) {
-    const auto& in_channel = data->get_slice(c);
+    const auto& in_channel = data->slice(c);
     ASSERT_EQ(in_channel.n_rows, 2);
     ASSERT_EQ(in_channel.n_cols, 2);
     float n1 = in_channel.at(0, 0);
@@ -831,8 +831,8 @@ TEST(test_tensor, reshape1) {
       "2,4";
 
   sftensor data = TensorCreate<float>(2, 2, 2);
-  data->get_slice(0) = f1;
-  data->get_slice(1) = f2;
+  data->slice(0) = f1;
+  data->slice(1) = f2;
   data->Reshape({8});
   for (uint32_t i = 0; i < 4; ++i) {
     ASSERT_EQ(data->index(i), i + 1);
@@ -854,8 +854,8 @@ TEST(test_tensor, reshape2) {
       "1,3";
 
   sftensor data = TensorCreate<float>(2, 2, 2);
-  data->get_slice(0) = f1;
-  data->get_slice(1) = f2;
+  data->slice(0) = f1;
+  data->slice(1) = f2;
   data->Reshape({2, 4});
   for (uint32_t i = 0; i < 4; ++i) {
     ASSERT_EQ(data->index(i), i);
@@ -890,9 +890,9 @@ TEST(test_tensor, get_data) {
   Tensor<float> tensor(3, 4, 5);
   ASSERT_EQ(tensor.channels(), 3);
   arma::fmat in2(4, 5);
-  const arma::fmat& in1 = tensor.get_slice(0);
-  tensor.get_slice(0) = in2;
-  const arma::fmat& in3 = tensor.get_slice(0);
+  const arma::fmat& in1 = tensor.slice(0);
+  tensor.slice(0) = in2;
+  const arma::fmat& in3 = tensor.slice(0);
   ASSERT_EQ(in1.memptr(), in3.memptr());
 }
 
@@ -908,8 +908,8 @@ TEST(test_tensor, at2) {
   Tensor<float> tensor(3, 4, 5);
   arma::fmat f(4, 5);
   f.fill(1.f);
-  tensor.get_slice(0) = f;
-  ASSERT_TRUE(arma::approx_equal(f, tensor.get_slice(0), "absdiff", 1e-4));
+  tensor.slice(0) = f;
+  ASSERT_TRUE(arma::approx_equal(f, tensor.slice(0), "absdiff", 1e-4));
 }
 
 TEST(test_tensor, at3) {

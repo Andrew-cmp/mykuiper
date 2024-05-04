@@ -5,3 +5,4 @@
 namespace my_infer {
 using NonParamLayer = Layer<float>;
 }  
+#endif

@@ -1,0 +1,5 @@
+7767517
+3 2
+pnnx.Input               pnnx_input_0             0 1 0 #0=(1,18,5,5)f32
+nn.Conv2d                conv2d_0                 1 1 0 1 bias=False dilation=(1,1) groups=9 in_channels=18 kernel_size=(3,3) out_channels=27 padding=(1,1) padding_mode=zeros stride=(2,2) @weight=(27,2,3,3)f32 $input=0 #0=(1,18,5,5)f32 #1=(1,27,3,3)f32
+pnnx.Output              pnnx_output_0            1 0 1 #1=(1,27,3,3)f32
