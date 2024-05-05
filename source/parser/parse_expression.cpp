@@ -40,6 +40,8 @@ std::shared_ptr<TokenNode> ExpressionParser::Generate_(int32_t& index){
         return std::make_shared<TokenNode>(std::stoi(str_number),nullptr,nullptr);
     }else if(current_token.token_type == TokenType::TokenAdd || current_token.token_type == TokenType::TokenMul){
         std::shared_ptr<TokenNode> current_node =std::make_shared<TokenNode>();
+        current_node->num_index = int32_t(current_token.token_type);
+        
         index += 1;
         CHECK(index < this->tokens_.size()) << "Missing left bracket!";
         CHECK(this->tokens_.at(index).token_type == TokenType::TokenLeftBracket);

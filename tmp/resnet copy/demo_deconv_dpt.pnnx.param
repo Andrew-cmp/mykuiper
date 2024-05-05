@@ -1,0 +1,5 @@
+7767517
+3 2
+pnnx.Input               pnnx_input_0             0 1 0 #0=(1,16,16,31)f32
+nn.ConvTranspose2d       conv_transpose2d_0       1 1 0 1 bias=True dilation=(5,5) groups=4 in_channels=16 kernel_size=(3,3) out_channels=8 output_padding=(3,3) padding=(9,9) stride=(3,3) @bias=(8)f32 @weight=(16,2,3,3)f32 $input=0 #0=(1,16,16,31)f32 #1=(1,8,41,86)f32
+pnnx.Output              pnnx_output_0            1 0 1 #1=(1,8,41,86)f32

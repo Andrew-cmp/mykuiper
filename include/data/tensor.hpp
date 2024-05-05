@@ -1,5 +1,5 @@
-#ifndef KUIPER_INFER_DATA_BLOB_HPP_
-#define KUIPER_INFER_DATA_BLOB_HPP_
+#ifndef MY_INFER_DATA_BLOB_HPP_
+#define MY_INFER_DATA_BLOB_HPP_
 #include <glog/logging.h>
 #include <armadillo>
 #include <memory>

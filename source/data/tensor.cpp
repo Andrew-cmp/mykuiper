@@ -472,4 +472,4 @@ void Tensor<T>::Review(const std::vector<uint32_t>& shapes) {
 template class Tensor<float>;
 template class Tensor<int32_t>;
 template class Tensor<uint8_t>;
-}// namespace kuiper_infer
+}// namespace my_infer
